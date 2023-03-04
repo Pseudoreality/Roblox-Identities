@@ -36,22 +36,24 @@ If something isn't accurate, or there's something I could word better. Please sa
 * RobloxScriptSecurity
   - Number: 5
   - Notes: This member is too dangerous (or too useless) to be used by the end user in any way.
-    - Have fun using that one function that really obscure function that you probably needed, because it's most likely locked behind this for no good reason.
+    - Have fun using that one really obscure function that you probably needed, because it's most likely locked behind this for no good reason. :sunglasses:
 * RobloxSecurity
   - Number: 6
   - Notes: The overall strictest security on this list. This member is intended for strictly internal usage only.
     - You will see this security commonly on serialization-only properties and backend functions, events, and callbacks.
-    - Only like, 3 members with this are exposed to the regular API dump, but you can get the entire list with the Full API Dump.
+    - Only like, 3 members with this are exposed to the regular API dump, but you can get the entire list of members with the Full API Dump.
     - The official Roblox docs say CoreScripts can use this, but they're lying because I haven't been able get CoreScripts to access these members.
 * NotAccessibleSecurity
-  - Number (sorta speculation): Let's just say 7, even though it says ScriptWriteRestricted in error messages.
+  - Number **(sorta speculation)**: Let's just say 7, even though it says ScriptWriteRestricted in error messages.
   - Notes: This member is not meant to be changed by anything during runtime. You might be able to change it through the properties window.
     - Basically `NotScriptable` but for write access only and not the entire member.
-## Other Tags
+#### Other Tags
 * security1
-  - Number: 1 (?)
-  - Notes (speculation): I don't know too much about this one, I just know it doesn't exist anymore and was probably the old name for PluginSecurity.
+  - Number **(speculation)**: 1
+  - Notes **(speculation)**: Doesn't exist anymore.
+    - Probably the old name for PluginSecurity.
 * RobloxPlaceSecurity
   - Number: 2
-  - Notes (speculation): Doesn't exist anymore. As far as I know, it was used for experimental members. Any member that had it when this was deleted was either changed to LocalUserSecurity or RobloxScriptSecurity.
+  - Notes **(speculation)**: Doesn't exist anymore.
+    - As far as I know, it was used for experimental members. Any member that had it when this was deleted was either changed to LocalUserSecurity or RobloxScriptSecurity.
   
