@@ -172,7 +172,7 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
       - Normal<sub>No better name :(</sub>
         - Loaded on the disk from `%localappdata%\Roblox\Versions\VERSION\BuiltInPlugins\Optimized_Embedded_Signature`
           - If the plugin is being debugged, it is loaded from `%localappdata%\Roblox\Versions\VERSION\ExtraContent\BuildInPlugins` instead
-        - Plugin instance is named `builtin_[fileName].[fileExtension]
+        - Plugin instance is named `builtin_[fileName].[fileExtension]`
       - Standalone
         - Loaded on the disk from `%localappdata%\Roblox\Versions\VERSION\BuiltInStandalonePlugins\Optimized_Embedded_Signature`
         <!-- This needs to be verified
