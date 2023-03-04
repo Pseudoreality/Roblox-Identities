@@ -51,7 +51,7 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
     - You will see this security commonly on serialization-only properties and backend functions, events, and callbacks.
     - Only like, 3 members with this are exposed to the regular API dump, but you can get the entire list of members with the Full API Dump.
     - The official Roblox docs say CoreScripts can use this[^robloxSecurityReference], but they're lying because I haven't been able get CoreScripts to access these members.
-      - Here's an image of me trying to called Player.GetGameSessionID() from a CoreScript: ![](https://cdn.discordapp.com/attachments/980231791984144384/1081561357813567488/image.png)
+      - Here's an image of me trying to call Player.GetGameSessionID() from a CoreScript: ![](https://cdn.discordapp.com/attachments/980231791984144384/1081561357813567488/image.png)
 * NotAccessibleSecurity
   - Number **(sorta speculation)**: Let's just say 7, even though it says ScriptWriteRestricted in error messages.
   - Notes: This member is not meant to be changed by anything during runtime. 
