@@ -37,7 +37,7 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
   - Number: 4
   - Notes: Only accessible for internal usage when relating to write access on Player members.
      - ...Why does no member explicitly say it has this tag?
-     - But if you've tried to change the name of the `Player.Character` you've encountered it.
+     - If you've tried to change the name of the `Player.Character` you've encountered it.
      - It's only purpose in life is to restrict it's write access for strictly internal usage.
      - Members Used Since Roblox Doesn't Say: `Player.Character.Name`, `Player.DisplayName`, `Player.Name`, `Player.HasVerifiedBadge`, `Player.UserId`
 * RobloxScriptSecurity
