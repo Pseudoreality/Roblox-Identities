@@ -161,6 +161,7 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
   - Notes: Built-in "add-on"[^builtInPluginsAreRequired] to Studio
     - They can only be loaded from the disk
     - They are signed, reading official built in plugin source code isn't possible because of this
+      - If you have Internal Permissions, the signature check is ignored completely.
     - Surprisingly, can be debugged!
       - Can be done by adding the plugin to a comma seperated FString
         - `FStringDebugCommaSepBuiltInPluginsToDebug`
