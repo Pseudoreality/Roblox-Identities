@@ -198,6 +198,8 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
   - Permissions: All
   - InstancesUsed **(speculation)**: N/A
   - Notes: Unknown use case
+    - Used by Roblox script executors, like Synapse, to completely ignore all identity related errors.
+      - Some free exploits used identity 6 for some dumbass reason.
     - It can create a Player instance, so I'm happy enough. ![](https://cdn.discordapp.com/attachments/980231791984144384/1081552399501623296/image.png)
 * WebService
   - Number: 8
