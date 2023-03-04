@@ -16,7 +16,7 @@ Wrapping it up, you can view a script's identity by calling the `printidentity()
 Anyway, I hope I can list these as accurately as possible. Please keep in mind that I obviously won't know everything since I am not a Roblox employee, just enough to where I found it best to move it to Github.
 
 ## Disclaimers Before We Start
-* I will ***not*** be providing methods for unlocking Roblox Internal or changing identities around like I did for these tests since I'd rather not have the company kick my door down.
+* I will ***not*** be providing methods for unlocking Roblox Internal or completely changing identities like I did for these tests since I'd rather not have the company kick my door down.
 * I can't write for shit, so if you find a typo, or something that isn't accurate, please assist me by telling me. I will give you free cookies for this. 🙏
 
 ## Security Tags
@@ -51,6 +51,7 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
     - You will see this security commonly on serialization-only properties and backend functions, events, and callbacks.
     - Only like, 3 members with this are exposed to the regular API dump, but you can get the entire list of members with the Full API Dump.
     - The official Roblox docs say CoreScripts can use this[^robloxSecurityReference], but they're lying because I haven't been able get CoreScripts to access these members.
+      - Here's an image of me trying to called Player.GetGameSessionID() from a CoreScript: ![](https://cdn.discordapp.com/attachments/980231791984144384/1081561357813567488/image.png)
 * NotAccessibleSecurity
   - Number **(sorta speculation)**: Let's just say 7, even though it says ScriptWriteRestricted in error messages.
   - Notes: This member is not meant to be changed by anything during runtime. 
