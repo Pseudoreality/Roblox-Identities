@@ -218,8 +218,22 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
   - Notes **(speculation)**: Most likely something to do with Replication Jobs
     - Tritto! ![](https://cdn.discordapp.com/attachments/980231791984144384/1081551659479613440/image.png)
 
+## Permissions Chart
+I wanted to have a bit of fun and use Markdown's tables. This gave me the excuse to!
+Plus if you just want to see what everything has access to, you can just look right here.
+
+<!-- I was really desperate for checkmarks. I didn't want the emojis because they wouldn't look nearly as good in my mind. -->
+|  | LocalGui (1) | GameScript (2) | ElevatedGameScript (3) | CommandBar (4) | StudioPlugin (5) | ElevatedStudioPlugin (6) | COM (7) | WebService (8) | Replicator (9) |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| PluginSecurity (1) | <ul><li>-[x] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[ ] </li></ul> |
+| LocalUserSecurity (3) | <ul><li>-[x] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[ ] </li></ul> |
+| WritePlayerSecurity (4) | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> |
+| RobloxScriptSecurity (5) | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> |
+| RobloxSecurity (6) | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[ ] </li></ul> |
+| NotAccessibleSecurity (7) | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[ ] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[x] </li></ul> | <ul><li>-[ ] </li></ul> |
+
 ## Footnotes
-[^robloxSecurityReference]: [Player.GetGameSessionId()](https://create.roblox.com/docs/reference/engine/classes/Player#GetGameSessionID:~:text=string-,ROBLOX%20SECURITY,-Returns) (Hover over the ROBLOX SECURITY tag)
+[^robloxSecurityReference]: [`Player.GetGameSessionId()`](https://create.roblox.com/docs/reference/engine/classes/Player#GetGameSessionID:~:text=string-,ROBLOX%20SECURITY,-Returns) (Hover over the ROBLOX SECURITY tag)
 [^debuggerManagerCommandBarOnly]: [`DebuggerManager`](https://create.roblox.com/docs/reference/engine/classes/DebuggerManager#:~:text=It%20can%20be%20retrieved%20via%20the%20DebuggerManager()%20function%2C%20but%20only%20from%20the%20command%20bar.)
 [^appDisclaimer]: The source code of CoreScripts on the Roblox Player or Windows App is not provided.
 [^coreScriptSourceCode]: [`CoreScript`](https://create.roblox.com/docs/reference/engine/classes/CoreScript#:~:text=The%20source%20code%20for%20CoreScripts%20can%20be%20found%20within%20Roblox%27s%20content%20folder.%20In%20Windows%2C%20this%20is%20can%20be%20found%20at%20%25localappdata%25%5CRoblox%5CVersions%5CVERSION%5CExtraContent%5Cscripts%5CCoreScripts)
