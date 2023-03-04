@@ -1,4 +1,4 @@
-This is my personal documentation from my time messing with Roblox's identities and security tags as well as other miscellaneous information I've dicovered about the how their code is loaded with some humor sprinkled in there.
+This is my personal documentation from my time messing with Roblox's identities and security tags as well as other miscellaneous information I've discovered about the how their code is loaded with some humor sprinkled in there.
 I decided to post it on Github since a message I've been updating on a private Discord channel is getting too long and I don't feel like buying Nitro, plus Github's Markdown is much better lol
 
 
