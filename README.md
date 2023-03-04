@@ -74,7 +74,7 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
   - Number: 0
   - Permissions: Contextual
   - InstancesUsed: Contextual
-  - Notes: It's quite literally an anonymous identity, it's a bit shy ☹
+  - Notes: It's quite literally an anonymous thread, it's a bit shy ☹
     - There's no set permissions for it, since it could be literally anything.
     - Something to do with the explorer and properties windows actually uses this in the background with all permissions but WritePlayerSecurity.
       - You can test this by trying to change `Player.Name` from properties, it should output some error along the lines of `"The current identity (0) did blah blah blah (lacking permission 4)"`
@@ -84,7 +84,7 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
     - PluginSecurity (1)
     - LocalUserSecurity (3)
   - InstancesUsed: N/A
-  - Notes: LocalGui
+  - Notes: Controls certain actions with the Studio UI, such as the properies window.
     - Also known as `expressionEval` because that's the name of the script that uses this identity.
     - Can actually be used by developers weirdly enough.
       - Example: Write `printidentity()` in a property that evaluates expressions, such as `BasePart.Size`. It should output `Current identity is 1`.
