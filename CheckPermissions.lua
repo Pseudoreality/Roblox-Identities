@@ -1,4 +1,5 @@
--- didn't use any luau for backwards compatibility
+-- didn't use any luau for compatibility
+
 -- basically pcall, but only returns it's success
 local function try(fn, ...)
 	return (pcall(fn, ...))
