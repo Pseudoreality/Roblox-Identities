@@ -16,7 +16,7 @@ Wrapping it up, you can view a script's identity by calling the `printidentity()
 Anyway, I hope I can list these as accurately as possible. Please keep in mind that I obviously won't know everything since I am not a Roblox employee, just enough to where I found it best to move it to Github.
 
 ## Disclaimers Before We Start
-* I will **not** be providing methods for unlocking Roblox Internal or changing identities around like I did for these tests since I'd rather not have the company kick my door down.
+* I will ***not*** be providing methods for unlocking Roblox Internal or changing identities around like I did for these tests since I'd rather not have the company kick my door down.
 * I can't write for shit, so if you find a typo, or something that isn't accurate, please assist me by telling me. I will give you free cookies for this. 🙏
 
 ## Security Tags
