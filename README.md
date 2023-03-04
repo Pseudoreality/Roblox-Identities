@@ -77,7 +77,7 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
   - Notes: It's quite literally an anonymous thread, it's a bit shy ☹
     - There's no set permissions for it, since it could be literally anything.
     - Something to do with the explorer and properties windows actually uses this in the background with all permissions but WritePlayerSecurity.
-      - You can test this by trying to change `Player.Name` from properties, it should output some error along the lines of `"The current identity (0) did blah blah blah (lacking permission 4)"`
+      - You can test this by trying to change `Player.Name` from properties, it should output some error along the lines of `"The current identity (0) cannot blah blah blah (lacking permission 4)"`
 * LocalGui
   - Number: 1
   - Permissions:
