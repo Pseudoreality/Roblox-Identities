@@ -1,4 +1,4 @@
-This is my personal documentation from my time messing with Roblox's identities and security tags.
+This is my personal documentation from my time messing with Roblox's identities and security tags as well as other miscellaneous information I've dicovered about the how their code is loaded with some humor sprinkled in there.
 I decided to post it on Github since a message I've been updating on a private Discord channel is getting too long and I don't feel like buying Nitro, plus Github's Markdown is much better lol
 
 
@@ -48,7 +48,7 @@ If something isn't accurate, or there's something I could word much better. Plea
     - The overall strictest security on the list.
     - You will see this security commonly on serialization-only properties and backend functions, events, and callbacks.
     - Only like, 3 members with this are exposed to the regular API dump, but you can get the entire list of members with the Full API Dump.
-    - The official Roblox docs say CoreScripts can use this, but they're lying because I haven't been able get CoreScripts to access these members.
+    - The official Roblox docs say CoreScripts can use this[^robloxSecurityReference], but they're lying because I haven't been able get CoreScripts to access these members.
 * NotAccessibleSecurity
   - Number **(sorta speculation)**: Let's just say 7, even though it says ScriptWriteRestricted in error messages.
   - Notes: This member is not meant to be changed by anything during runtime. 
@@ -74,7 +74,7 @@ If something isn't accurate, or there's something I could word much better. Plea
   - Notes: It's quite literally an anonymous identity, it's a bit shy ☹
     - There's no set permissions for it, since it could be literally anything.
     - Something to do with the explorer and properties windows actually uses this in the background with all permissions but WritePlayerSecurity.
-    - You can test this by trying to change `Player.Name` from properties, it should output some error along the lines of `"The current identity (0) did blah blah blah (lacking permission 4)"`
+      - You can test this by trying to change `Player.Name` from properties, it should output some error along the lines of `"The current identity (0) did blah blah blah (lacking permission 4)"`
 * LocalGui
   - Number: 1
   - Permissions:
@@ -106,7 +106,7 @@ If something isn't accurate, or there's something I could word much better. Plea
   - InstancesUsed:
     - [`CoreScript`](https://create.roblox.com/docs/reference/engine/classes/CoreScript)
   - Notes: Special script used to run Lua scripts made by Roblox in live games.
-    - As mentioned on Roblox's docs, most[^appDisclaimer] of their source code is available in `%localappdata%\Roblox\Versions\VERSION\ExtraContent\scripts\CoreScripts` on Windows.
+    - As mentioned on Roblox's docs, *most*[^appDisclaimer] of their source code is available in `%localappdata%\Roblox\Versions\VERSION\ExtraContent\scripts\CoreScripts` on Windows[^coreScriptSourceCode].
     - Code is *actually* loaded from `%localappdata%\Roblox\Versions\VERSION\ExtraContent\models\DataModelPatch\DataModelPatch.rbxm`
       - ***DO NOT EDIT THIS MODEL FILE! IT'S SIGNED AND WILL BRICK YOUR STUDIO IF YOU DON'T KNOW WHAT YOU'RE DOING!***
         - This was learned from personal experience, at least back the model up first so you don't have to reinstall Studio so you don't have to suffer the same fate. :pray:
@@ -127,7 +127,98 @@ If something isn't accurate, or there's something I could word much better. Plea
         - Yes, this means any Plugin is capable of reading exactly what you're typing in the CommandBar
 * StudioPlugin
   - Number: 5
+  - Permissions:
+    - PluginSecurity (1)
+  - InstancesUsed:
+    - [`Plugin`](https://create.roblox.com/docs/reference/engine/classes/Plugin)
+    - [`Script`](https://create.roblox.com/docs/reference/engine/classes/Script)
+    - [`LocalScript`](https://create.roblox.com/docs/reference/engine/classes/LocalScript)
+  - Notes: Custom add-on to Studio that any developer can use.
+    - The people that make these are the coolest people ever and you should thank them.
+    - There are two types of StudioPlugins
+      - Local
+        - Loaded on the disk from `%localappdata%\Roblox\Plugins`
+        - Can be parented under `PluginDebugService`
+        - Plugin instance is named `user_[fileName].[fileExtension]`
+      - Cloud
+        - Is also loaded on the disk, but in a more complicated way.
+          - Initially downloaded from the Roblox website or via `StudioService.TryInstallPlugin()` first though.
+        - Can not be debugged for "fuck you" reason (I can understand why though, since Local plugins exist anyway)
+        - Plugin instance is named `cloud_[pluginId]`
+    - Can have three copies of itself loaded at a time
+      - Edit
+      - PlayClient
+      - PlayServer
+* ElevatedStudioPlugin
+  - Number: 6
+  - Permissions:
+    - PluginSecurity (1)
+    - LocalUserSecurity (3)
+    - RobloxScriptSecurity (5)
+  - InstancesUsed: *Refer to StudioPlugin.*
+  - Notes: Built-in "add-on"[^builtInPluginsAreRequired] to Studio
+    - They can only be loaded from the disk
+    - They are signed, reading official built in plugin source code isn't possible because of this
+    - Surprisingly, can be debugged!
+      - Can be done by adding the plugin to a comma seperated FString
+        - `FStringDebugCommaSepBuiltInPluginsToDebug`
+        - Must be formatted like `[FileName].[FileExtension], [FileName].[FileExtension]`
+          - Case-sensitive
+    - There are two types
+      - Normal<sub>No better name :(</sub>
+        - Loaded on the disk from `%localappdata%\Roblox\Versions\VERSION\BuiltInPlugins\Optimized_Embedded_Signature`
+          - If the plugin is being debugged, it is loaded from `%localappdata%\Roblox\Versions\VERSION\ExtraContent\BuildInPlugins` instead
+        - Plugin instance is named `builtin_[fileName].[fileExtension]
+      - Standalone
+        - Loaded on the disk from `%localappdata%\Roblox\Versions\VERSION\BuiltInStandalonePlugins\Optimized_Embedded_Signature`
+        <!-- This needs to be verified
+          - If the plugin is being debugged, it is loaded from `%localappdata%\Roblox\Versions\VERSION\ExtraContent\BuildInStandalonePlugins` instead
+        -->
+        - Plugin instance is named `sabuiltin_[fileName].[fileExtension]`
+    - Can have four copies of itself loaded at a time
+      - Standalone
+        - DataModel that runs before everything, even as early as the Home Page
+      - Edit
+      - PlayClient
+      - PlayServer
+    - Most of these are open to use by developers, but some require Internal Permissions to use
+      - Some examples of internal only plugins include:
+        - Developer Inspector
+        - Roblox Classic
+        - Storybook
+        - User Input Playback Tool
+    - Some can only be activated via FFlag
+      - Some examples include
+        - GuiDevEnv
+        - Roblox Classic
+* COM
+  - Number: 7
+  - Permissions: All
+  - InstancesUsed **(speculation)**: N/A
+  - Notes: Unknown use case
+    - It can create a Player instance, so I'm happy enough. ![](https://cdn.discordapp.com/attachments/980231791984144384/1081552399501623296/image.png)
+* WebService
+  - Number: 8
+  - Permissions: All
+  - InstancesUsed **(speculation)**: I can only assume `LuaWebService` based off of the identity's name, but I'm not positive
+  - Notes: Unknown use case
+    - Ditto! ![](https://cdn.discordapp.com/attachments/980231791984144384/1081551958260863036/image.png)
+* Replicator
+  - Number: 9
+  - Permissions:
+    - WritePlayerSecurity (4)
+    - RobloxScriptSecurity (5)
+  - InstancesUsed **(speculation)**: N/A
+  - Notes **(speculation)**: Most likely something to do with Replication Jobs
+    - Tritto! ![](https://cdn.discordapp.com/attachments/980231791984144384/1081551659479613440/image.png)
+
+## Disclaimer
+I will **not** be providing methods for unlocking Roblox Internal or changing identities around like I did for these tests since I'd rather not have the company kick my door down.
+If you're smart enough however, you'll be able to figure out how to do it.
 
 ## Footnotes
+[^robloxSecurityReference]: [Player.GetGameSessionId()](https://create.roblox.com/docs/reference/engine/classes/Player#GetGameSessionID:~:text=string-,ROBLOX%20SECURITY,-Returns) (Hover over the ROBLOX SECURITY tag)
 [^debuggerManagerCommandBarOnly]: [`DebuggerManager`](https://create.roblox.com/docs/reference/engine/classes/DebuggerManager#:~:text=It%20can%20be%20retrieved%20via%20the%20DebuggerManager()%20function%2C%20but%20only%20from%20the%20command%20bar.)
 [^appDisclaimer]: The source code of CoreScripts on the Roblox Player or Windows App is not provided.
+[^coreScriptSourceCode]: [`CoreScript`](https://create.roblox.com/docs/reference/engine/classes/CoreScript#:~:text=The%20source%20code%20for%20CoreScripts%20can%20be%20found%20within%20Roblox%27s%20content%20folder.%20In%20Windows%2C%20this%20is%20can%20be%20found%20at%20%25localappdata%25%5CRoblox%5CVersions%5CVERSION%5CExtraContent%5Cscripts%5CCoreScripts)
+[^builtInPluginsAreRequired]: Not really an add-on, since you need most of them to make Studio even mostly useable.
