@@ -67,6 +67,9 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
   - Notes **(speculation)**: Doesn't exist anymore.
     - As far as I know, it was used for experimental members.
     - Any member that had it when this was deleted was either changed to LocalUserSecurity or RobloxScriptSecurity.
+* UnknownSecurity
+  - Number: N/A
+  - Notes: Used by `-API` and `-FullAPI` when it doesn't know the security of a member.
   
 ## Identities
 
