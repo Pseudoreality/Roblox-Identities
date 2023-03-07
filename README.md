@@ -40,6 +40,8 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
      - If you've tried to change the name of the `Player.Character` you've encountered it.
      - It's only purpose in life is to restrict it's write access for strictly internal usage.
      - Members Used Since Roblox Doesn't Say: `Player.Character.Name`, `Player.DisplayName`, `Player.Name`, `Player.HasVerifiedBadge`, `Player.UserId`
+     - `Player` instantiation requires this permission.
+       - If the current identity has access to LocalUserSecurity, they can subsititute `Player` instantiation with `Players.CreateLocalPlayer` and `Players.ResetLocalPlayer`. Keep in mind, this method is very limited.
 * RobloxScriptSecurity
   - Number: 5
   - Notes: This member is too dangerous (or too useless) to be used by the end user in any way.
