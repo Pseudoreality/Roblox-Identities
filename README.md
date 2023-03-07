@@ -8,7 +8,7 @@ An example can be `CoreGui.TakeScreenshot()`. You wouldn't want some random game
 
 Security tags are applied to an API member Roblox deems to be sensitive or otherwise something only they should be messing with.
 Using `CoreGui.TakeScreenshot()` as a example still, it's security tag is RobloxScriptSecurity, which significantly limits it's access from before.
-Only anything that explicitly has access to RobloxScriptSecurity can use `CoreGui.TakeScreenshot()` now, which is good since no random game can just up and take screenshots whenever they wish.
+Only anything that has access to RobloxScriptSecurity can use `CoreGui.TakeScreenshot()` now, which is good since no random game can just up and take screenshots whenever they wish.
 Functions, Events, and Callbacks have a singular security tag, however Properties can have a Read and Write security, so do keep that in mind.
 
 Wrapping it up, you can view a script's identity by calling the `printidentity()` function, however for checking a script's permissions, you can either refer to what is listed further down or you can run [the lua script provided in this repository](https://github.com/Pseudoreality/Roblox-Identities/blob/main/CheckPermissions.lua).
