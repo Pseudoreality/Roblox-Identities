@@ -3,7 +3,7 @@ I decided to post it on Github since a message I've been updating on a private D
 
 
 For anyone that doesn't know what Roblox identities are, I can sorta go over them here.
-Every script on Roblox is basically given a level of access. This level of access is called an identity. They exist to keep malicious actors from running sensitive Roblox APIs that you may have seen locked behind, for example, RobloxScriptSecurity when you looking up what that *one* function does at 3 in the morning.
+Every script on Roblox is basically given a number that says what they're allowed to access. This number is called an identity. They exist to keep malicious actors from running sensitive Roblox APIs that you may have seen locked behind, for example, RobloxScriptSecurity when you looking up what that *one* function does at 3 in the morning.
 An example can be `CoreGui.TakeScreenshot()`. You wouldn't want some random game to run this whenever they wanted, right? That's where security tags come in.
 
 Security tags are applied to an API member Roblox deems to be sensitive or otherwise something only they should be messing with.
