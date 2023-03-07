@@ -45,6 +45,7 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
 * RobloxScriptSecurity
   - Number: 5
   - Notes: This member is too dangerous (or too useless) to be used by the end user in any way.
+    - `ParabolaAdornment` instantiation requires this permission.
     - Have fun using that one really obscure function that you probably needed, because it's most likely locked behind this for no good reason. :sunglasses:
 * RobloxSecurity
   - Number: 6
