@@ -103,8 +103,8 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
     - [`LocalScript`](https://create.roblox.com/docs/reference/engine/classes/LocalScript)
   - Notes: Standard developer script
     - Will be the lifeblood of *any* Roblox game.
-      - If you can get any other identity to run in a live game though and ***after reporting it to Roblox AND after they've patched it***, please tell me because that would be the most hilarious thing to me.
     - The only identity a developer can use in live games.
+      - If you can get any other identity to run in a live game though, ***report it to Roblox AND wait until they've patched it***. Then please tell me because that would be the most hilarious thing to me.
     - Elaborating on InstancesUsed, this assumes they **are not** published/saved as a cloud/user plugin.
 * ElevatedGameScript
   - Number: 3
