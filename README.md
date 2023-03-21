@@ -127,7 +127,7 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
   - InstancesUsed: N/A (kinda, refer to notes)
   - Notes: Utility and debugging tool.
     - Most permissive identity a developer can use.
-    - Also used by `File > Model > Run Script`.
+    - Also used by `Model > Run Script`.
     - The bar itself can have it's identity changed between GameScript, CommandBar, and ElevatedStudioPlugin on Roblox Internal.
       - Here's an image of what that looks like: ![](https://cdn.discordapp.com/attachments/980231791984144384/1081526722517811210/image.png)
     - Elaborating on InstancesUsed, it's source code (wack as hell, I know) can be be read in two different ways.
