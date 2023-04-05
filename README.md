@@ -32,7 +32,7 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
 * LocalUserSecurity
   - Number: 3
   - Notes: This member is too dangerous to be used by even Plugins, but end users can use it in the CommandBar lol.
-    - You need this permission to access the DebuggerManager[^debuggerManagerCommandBarOnly]<sub>(silly, I know!)</sub>.
+    - You need this permission to access the [DebuggerManager](https://create.roblox.com/docs/reference/engine/classes/DebuggerManager)[^debuggerManagerCommandBarOnly]<sub>(silly, I know!)</sub>.
 * WritePlayerSecurity
   - Number: 4
   - Notes: Only accessible for internal usage when relating to write access on Player members.
