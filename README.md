@@ -1,50 +1,47 @@
-This is my personal documentation from my time messing with Roblox's identities and security tags as well as other miscellaneous information I've discovered about the how their code is loaded with some humor sprinkled in there.
-I decided to post it on Github since a message I've been updating on a private Discord channel is getting too long and I don't feel like buying Nitro, plus Github's Markdown is much better lol
+This is my personal documentation from my time messing with Roblox's identities and security tags, as well as other miscellaneous information I've discovered about how their code is loaded, with some humor sprinkled in there. I decided to post it on GitHub since a message I've been updating on a private Discord channel is getting too long and I don't feel like buying Nitro. Plus GitHub's Markdown is much better lol.
 
-
-For anyone that doesn't know what Roblox identities are, I can sorta go over them here.
-Every script on Roblox is basically given a number that says what they're allowed to access. This number is called an identity. They exist to keep malicious actors from running sensitive Roblox APIs that you may have seen locked behind, for example, RobloxScriptSecurity when you looking up what that *one* function does at 3 in the morning.
-An example can be `CoreGui.TakeScreenshot()`. You wouldn't want some random game to run this whenever they wanted, right? That's where security tags come in.
+For anyone who doesn't know what Roblox identities are, I can provide an explanation here. Every script on Roblox is given a number that says what they are allowed access to. This number is called an identity. They exist to keep malicious actors from running sensitive Roblox APIs that you may have seen locked behind, for example, RobloxScriptSecurity when you look up what that one function does at 3 in the morning.
+An example of a sensitive API can be `CoreGui.TakeScreenshot()`. You wouldn't want some random game to run this whenever they wanted, right? That's where security tags come in.
 
 Security tags are applied to an API member Roblox deems to be sensitive or otherwise something only they should be messing with.
-Using `CoreGui.TakeScreenshot()` as a example still, it's security tag is RobloxScriptSecurity, which significantly limits it's access from before.
-Only anything that has access to RobloxScriptSecurity can use `CoreGui.TakeScreenshot()` now, which is good since no random game can just up and take screenshots whenever they wish.
-Functions, Events, and Callbacks have a singular security tag, however Properties can have a Read and Write security, so do keep that in mind.
+Using `CoreGui.TakeScreenshot()` as an example still, its security tag is RobloxScriptSecurity, which significantly limits its access from before.
+Only identities that can access RobloxScriptSecurity can use `CoreGui.TakeScreenshot()` now, which is good since no random game can just up and take screenshots whenever they wish.
+Functions, Events, and Callbacks have a singular security tag, but, Properties can have a Read and Write security, so keep that in mind.
 
-Wrapping it up, you can view a script's identity by calling the `printidentity()` function inside of it, however for checking a script's permissions, you can either refer to what is listed further down or you can run [the lua script provided in this repository](https://github.com/Pseudoreality/Roblox-Identities/blob/main/CheckPermissions.lua).
+Wrapping it up, you can view a script's identity by calling the `printidentity()` function inside of it, however for checking a script's permissions, you can either refer to what is listed further down or you can run [the Lua script provided in this repository](https://github.com/Pseudoreality/Roblox-Identities/blob/main/CheckPermissions.lua).
 
-Anyway, I hope I can list these as accurately as possible. Please keep in mind that I obviously won't know everything since I am not a Roblox employee, just enough to where I found it best to move it to Github.
+Anyway, I hope I can list these as accurately as possible. Please remember that I obviously won't know everything since I am not a Roblox employee, just enough to where I found it best to move it to Github.
 
 ## Disclaimers Before We Start
-* I will ***not*** be providing methods for unlocking Roblox Internal or completely changing identities like I did for these tests since I'd rather not have the company kick my door down.
-* I can't write for shit, so if you find a typo, or something that isn't accurate, please assist me by telling me. I will give you free cookies for this. 🙏
+* I will ***not*** provide methods for unlocking Roblox Internal or completely changing identities as I did for these tests since I'd rather not have the company kick my door down.
+* I can't write for shit, so if you find a typo or something that isn't accurate, please assist me by telling me. I will give you free cookies for this. 🙏
 
 ## Security Tags
 
 #### Current Tags
 * None
   - Number: 0
-  - Notes: I honestly forgot it was a thing, but it basically says that everything can use this member, go nuts. :champagne::partying_face:
+  - Notes: I keep forgetting that "None" is technically a security, but it basically says that any identity can use this member. Go nuts. :champagne::partying_face:
 * PluginSecurity
   - Number: 1
-  - Notes: This member is deemed too dangerous/useless for GameScripts to use
-    - Most members under this are strictly intended for Plugin use<sub>(duhhh)</sub>.
+  - Notes: This member is deemed too dangerous/useless for GameScripts to use.
+    - Most members under this are strictly intended for Plugin use.<sub>(duhhh)</sub>.
 * LocalUserSecurity
   - Number: 3
   - Notes: This member is too dangerous to be used by even Plugins, but end users can use it in the CommandBar lol.
     - You need this permission to access the [DebuggerManager](https://create.roblox.com/docs/reference/engine/classes/DebuggerManager)[^debuggerManagerCommandBarOnly]<sub>(silly, I know!)</sub>.
 * WritePlayerSecurity
   - Number: 4
-  - Notes: Only accessible for internal usage when relating to write access on Player members.
+  - Notes: Only accessible for internal usage when relating to write access on certain Player members.
      - ...Why does no member explicitly say it has this tag?
      - If you've tried to change the name of the `Player.Character` you've encountered it.
-     - It's only purpose in life is to restrict it's write access for strictly internal usage.
-     - Members Used Since Roblox Doesn't Say: `Player.Character.Name`, `Player.DisplayName`, `Player.Name`, `Player.HasVerifiedBadge`, `Player.UserId`
+     - Its only purpose in life is to restrict its write access for strictly internal usage.
+     - Members Used Since Roblox Doesn't Say: `Player.Character.Name`, `Player.DisplayName`, `Player.Name`, `Player.HasVerifiedBadge`, `Player.UserId`, `Player.name`, `Player.userId`
      - `Player` instantiation requires this permission.
        - If the current identity has access to LocalUserSecurity, they can subsititute `Player` instantiation with `Players.CreateLocalPlayer` and `Players.ResetLocalPlayer`. Keep in mind, this method is very limited.
 * RobloxScriptSecurity
   - Number: 5
-  - Notes: This member is too dangerous (or too useless) to be used by the end user in any way.
+  - Notes: This member is too dangerous/useless to be used by the end user in any way.
     - `ParabolaAdornment` instantiation requires this permission.
     - Have fun using that one really obscure function that you probably needed, because it's most likely locked behind this for no good reason. :sunglasses:
 * RobloxSecurity
@@ -56,8 +53,8 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
     - The official Roblox docs say CoreScripts can use this[^robloxSecurityReference], but they're lying because I haven't been able to get CoreScripts to access these members.
       - Here's an image of me trying to call `Player.GetGameSessionID()` from a CoreScript: ![](https://cdn.discordapp.com/attachments/980231791984144384/1081561357813567488/image.png)
 * NotAccessibleSecurity
-  - Number **(sorta speculation)**: Let's just say 7, even though it says ScriptWriteRestricted in error messages.
-  - Notes: This member is not meant to be changed by anything during runtime. 
+  - Number: Nothing that can be confirmed through error messages. (ScriptWriteRestricted)
+  - Notes: This member is most likely not meant to be changed by anything during runtime. 
     - You might be able to change it through the properties window.
     - Basically `NotScriptable` but for write access only and not the entire member.
 #### Other Tags
@@ -72,7 +69,7 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
     - Any member that had it when this was deleted was either changed to LocalUserSecurity or RobloxScriptSecurity.
 * UnknownSecurity
   - Number: N/A
-  - Notes: Used by `-API` and `-FullAPI` when it doesn't know the security of a member.
+  - Notes: Used by `-API` and `-FullAPI` when the dump doesn't know the security of a member.
   
 ## Identities
 
@@ -80,19 +77,19 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
   - Number: 0
   - Permissions: Contextual
   - InstancesUsed: Contextual
-  - Notes: It's quite literally an anonymous thread, it's a bit shy ☹
-    - There's no set permissions for it, since it could be literally anything.
-    - Something to do with the explorer and properties windows actually uses this in the background with all permissions but WritePlayerSecurity.
-      - You can test this by trying to change `Player.Name` from properties, it should output some error along the lines of `"The current identity (0) cannot blah blah blah (lacking permission 4)"`
+  - Notes: It's quite literally an anonymous thread; it's a bit shy ☹
+    - There are no set permissions for it since it could be literally anything.
+    - Something to do with the explorer and properties windows uses this in the background with all permissions but WritePlayerSecurity.
+      - You can test this by trying to change `Player.Name` from properties. It should output some error along the lines of `"The current identity (0) cannot blah blah blah (lacking permission 4)"`
 * LocalGui
   - Number: 1
   - Permissions:
     - PluginSecurity (1)
     - LocalUserSecurity (3)
   - InstancesUsed: N/A
-  - Notes: Controls certain actions with the Studio UI, such as the properies window.
+  - Notes: Controls a few actions with the Studio UI, such as the properties window.
     - Also known as `expressionEval` because that's the name of the script that uses this identity.
-    - Can actually be used by developers weirdly enough.
+    - Can be used by developers weirdly enough.
       - Example: Write `printidentity()` in a property that evaluates expressions, such as `BasePart.Size`. It should output `Current identity is 1`.
     - Has no real reason to exist since it's pretty much a copy of CommandBar, but sure Roblox.
 * GameScript
@@ -102,10 +99,10 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
     - [`Script`](https://create.roblox.com/docs/reference/engine/classes/Script)
     - [`LocalScript`](https://create.roblox.com/docs/reference/engine/classes/LocalScript)
   - Notes: Standard developer script
-    - Will be the lifeblood of *any* Roblox game.
-    - The only identity a developer can use in live games.
+    - Will be the lifeblood of most Roblox games.
+    - The only identity a developer can naturally use in live games.
       - If you can get any other identity to run in a live game though, ***report it to Roblox AND wait until they've patched it***. Then please tell me because that would be the most hilarious thing to me.
-    - Elaborating on InstancesUsed, this assumes they **are not** published/saved as a cloud/user plugin.
+    - Important to InstancesUsed; this assumes they **are not** published/saved as a cloud/user plugin.
 * ElevatedGameScript
   - Number: 3
   - Permissions:
@@ -115,10 +112,10 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
   - InstancesUsed:
     - [`CoreScript`](https://create.roblox.com/docs/reference/engine/classes/CoreScript)
   - Notes: Special script used to run Lua scripts made by Roblox in live games.
-    - As mentioned on Roblox's docs, *most*[^appDisclaimer] of their source code is available in `%localappdata%\Roblox\Versions\VERSION\ExtraContent\scripts\CoreScripts` on Windows[^coreScriptSourceCode].
-    - Code is *actually* loaded from `%localappdata%\Roblox\Versions\VERSION\ExtraContent\models\DataModelPatch\DataModelPatch.rbxm`
+    - As mentioned on Roblox's docs, *most*[^appDisclaimer] of their source code is available in `%localappdata%\Roblox\Versions\{clientUploadVersion}\ExtraContent\scripts\CoreScripts` on Windows[^coreScriptSourceCode].
+    - Code is *actually* loaded from `%localappdata%\Roblox\Versions\{clientUploadVersion}\ExtraContent\models\DataModelPatch\DataModelPatch.rbxm`
       - ***DO NOT EDIT THIS MODEL FILE! IT'S SIGNED AND WILL BRICK YOUR STUDIO IF YOU DON'T KNOW WHAT YOU'RE DOING!***
-        - This was learned from personal experience, at least back the model up first so you don't have to reinstall Studio so you don't have to suffer the same fate. :pray:
+        - This was learned from personal experience; at least back the model up first so you don't have to reinstall Studio so you don't have to suffer the same fate. :pray:
 * CommandBar
   - Number: 4
   - Permissions:
@@ -126,14 +123,14 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
     - LocalUserSecurity (3)
   - InstancesUsed: N/A (kinda, refer to notes)
   - Notes: Utility and debugging tool.
-    - Most permissive identity a developer can use.
+    - Most permissive identity a developer can use in Studio.
     - Also used by `Model > Run Script`.
-    - The bar itself can have it's identity changed between GameScript, CommandBar, and ElevatedStudioPlugin on Roblox Internal.
+    - The user can change the identity of the physical bar to either GameScript, CommandBar, and ElevatedStudioPlugin on Roblox Internal.
       - Here's an image of what that looks like: ![](https://cdn.discordapp.com/attachments/980231791984144384/1081526722517811210/image.png)
-    - Elaborating on InstancesUsed, it's source code (wack as hell, I know) can be be read in two different ways.
-      - `TemporaryScriptService.CommandLine`, though `TemporaryScriptService` itself is locked behind RobloxSecurity.
+    - Elaborating on InstancesUsed, it's source code (wack as hell to say, I know) can be be read in two different ways.
+      - `TemporaryScriptService.CommandLine`, although `TemporaryScriptService` is locked behind RobloxSecurity.
       - `ScriptEditorService.CommandBar`, and call `ScriptDocument.GetText()`
-        - Yes, this means any Plugin is capable of reading exactly what you're typing in the CommandBar
+        - Yes, this means *any* Plugin is capable of reading exactly what you're typing in the CommandBar.
 * StudioPlugin
   - Number: 5
   - Permissions:
@@ -143,16 +140,21 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
     - [`Script`](https://create.roblox.com/docs/reference/engine/classes/Script)
     - [`LocalScript`](https://create.roblox.com/docs/reference/engine/classes/LocalScript)
   - Notes: Custom add-on to Studio that any developer can use.
-    - The people that make these are the coolest people ever and you should thank them.
-    - There are two types of StudioPlugins
+    - The people that make these are the coolest people ever, and you should thank them.
+    - There are two types of StudioPlugins:
       - Local
         - Loaded on the disk from `%localappdata%\Roblox\Plugins`
+          - Settings file for all local plugins is located at `%localappdata%\Roblox\{loggedinUserId}\InstalledPlugins\0\settings.json`
+            - This file is also shared with BuiltInPlugins.
         - Can be parented under `PluginDebugService`
         - Plugin instance is named `user_[fileName].[fileExtension]`
       - Cloud
         - Is also loaded on the disk, but in a more complicated way.
           - Initially downloaded from the Roblox website or via `StudioService.TryInstallPlugin()` first though.
-        - Can not be debugged for "fuck you" reason (I can understand why though, since Local plugins exist anyway)
+          - After installing, the plugin model is located at `%localappdata%\Roblox\{loggedInUserId}\InstalledPlugins\{pluginId}\{pluginVersionId}\Plugin.rbxm`
+            - Settings file located in the same folder.
+            - Don't steal the plugin model and pass it off as your own, that shit's lame.
+        - Not debuggable, unlike local plugins.
         - Plugin instance is named `cloud_[pluginId]`
     - Can have three copies of itself loaded at a time
       - Edit
@@ -167,8 +169,8 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
   - InstancesUsed: *Refer to StudioPlugin.*
   - Notes: Built-in "add-on"[^builtInPluginsAreRequired] to Studio
     - They can only be loaded from the disk
-    - They are signed, reading official built in plugin source code isn't possible because of this
-      - If you have Internal Permissions, the signature check is ignored completely.
+    - They are signed, reading official built in plugin source code isn't possible because of this.
+      - If you have Internal Permissions, the signature check when loading them is ignored completely.
     - Surprisingly, can be debugged!
       - Can be done by adding the plugin to a comma seperated FString
         - `FStringDebugCommaSepBuiltInPluginsToDebug`
@@ -176,23 +178,22 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
           - Case-sensitive
     - There are two types
       - Normal<sub>No better name :(</sub>
-        - Loaded on the disk from `%localappdata%\Roblox\Versions\VERSION\BuiltInPlugins\Optimized_Embedded_Signature`
-          - If the plugin is being debugged, it is loaded from `%localappdata%\Roblox\Versions\VERSION\ExtraContent\BuildInPlugins` instead
+        - Loaded on the disk from `%localappdata%\Roblox\Versions\{clientUploadVersion}\BuiltInPlugins\Optimized_Embedded_Signature`
+          - If the plugin is being debugged, it is loaded from `%localappdata%\Roblox\Versions\{clientUploadVersion}\ExtraContent\BuiltInPlugins` instead
         - Plugin instance is named `builtin_[fileName].[fileExtension]`
       - Standalone
-        - Loaded on the disk from `%localappdata%\Roblox\Versions\VERSION\BuiltInStandalonePlugins\Optimized_Embedded_Signature`
-        <!-- This needs to be verified
-          - If the plugin is being debugged, it is loaded from `%localappdata%\Roblox\Versions\VERSION\ExtraContent\BuildInStandalonePlugins` instead
-        -->
+        - Loaded on the disk from `%localappdata%\Roblox\Versions\{clientUploadVersion}\BuiltInStandalonePlugins\Optimized_Embedded_Signature`
+          - If the plugin is being debugged, it is loaded from `%localappdata%\Roblox\Versions\{clientUploadVersion}\ExtraContent\BuiltInStandalonePlugins` instead
         - Plugin instance is named `sabuiltin_[fileName].[fileExtension]`
     - Can have four copies of itself loaded at a time
       - Standalone
-        - DataModel that runs before everything, even as early as the Home Page
+        - DataModel that runs before everything, even as early as the Home Page.
+        - Only loaded here if the plugin is a Standalone plugin.
       - Edit
       - PlayClient
       - PlayServer
     - Most of these are open to use by developers, but some require Internal Permissions to use
-      - Some examples of internal only plugins include:
+      - Some internal only plugins include:
         - Developer Inspector
         - Roblox Classic
         - Storybook
@@ -206,14 +207,15 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
   - Permissions: All
   - InstancesUsed **(speculation)**: N/A
   - Notes: Unknown use case
-    - Used by Roblox script executors, like Synapse, to completely ignore all identity related errors.
+    - Used by Roblox script executors, like Synapse, to completely ignore all identity-related errors.
       - Some free exploits use identity 6 for some dumbass reason.
-    - It can create a Player instance, so I'm happy enough. ![](https://cdn.discordapp.com/attachments/980231791984144384/1081552399501623296/image.png)
+    - It can create a Player instance so I'm happy enough. ![](https://cdn.discordapp.com/attachments/980231791984144384/1081552399501623296/image.png)
 * WebService
   - Number: 8
   - Permissions: All
-  - InstancesUsed **(speculation)**: I can only assume `LuaWebService` based off of the identity's name, but I'm not positive
+  - InstancesUsed **(speculation)**: I can only assume `LuaWebService` based off of the identity's name, but I'm not positive.
   - Notes: Unknown use case
+    - Some Roblox script executors use this for the same reasons they use COM.
     - Ditto! ![](https://cdn.discordapp.com/attachments/980231791984144384/1081551958260863036/image.png)
 * Replicator
   - Number: 9
@@ -225,8 +227,8 @@ Anyway, I hope I can list these as accurately as possible. Please keep in mind t
     - Tritto! ![](https://cdn.discordapp.com/attachments/980231791984144384/1081551659479613440/image.png)
 
 ## Permissions Chart
-I wanted to have a bit of fun and use Markdown's tables. This gave me the excuse to!
-Plus if you just want to see what everything has access to, you can just look right here.
+I wanted to have a bit of fun and use Markdown's tables. This gave me the excuse to do so!
+Plus if you just want to see what everything has access to, you can look right here.
 
 <!-- I was really desperate for checkmarks. I didn't want the emojis because they wouldn't look nearly as good in my mind. -->
 |  | LocalGui (1) | GameScript (2) | ElevatedGameScript (3) | CommandBar (4) | StudioPlugin (5) | ElevatedStudioPlugin (6) | COM (7) | WebService (8) | Replicator (9) |
