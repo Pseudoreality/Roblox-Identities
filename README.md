@@ -202,13 +202,13 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
       - Some examples include
         - GuiDevEnv
         - Roblox Classic
-* COM
+* COM (Component Object Model?)
   - Number: 7
   - Permissions: All
   - InstancesUsed **(speculation)**: N/A
   - Notes: Unknown use case
     - Used by Roblox script executors, like Synapse, to completely ignore all identity-related errors.
-      - Some free exploits use identity 6 for some dumbass reason.
+      - On a related note, some free exploits use ElevatedStudioPlugin for some dumbass reason.
     - It can create a Player instance so I'm happy enough. ![](https://cdn.discordapp.com/attachments/980231791984144384/1081552399501623296/image.png)
 * WebService
   - Number: 8
@@ -225,6 +225,12 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
   - InstancesUsed **(speculation)**: N/A
   - Notes **(speculation)**: Most likely something to do with Replication Jobs
     - Tritto! ![](https://cdn.discordapp.com/attachments/980231791984144384/1081551659479613440/image.png)
+* Invalid Identity
+  - Number: Any number that isn't a number from 0 to 9
+  - Permissions: N/A
+  - InstancesUsed: N/A
+  - Notes: Fallback
+    - I considered it important enough to note since it doesn't error when used, but it is just a fallback for when the identity isn't set correctly.
 
 ## Permissions Chart
 I wanted to have a bit of fun and use Markdown's tables. This gave me the excuse to do so!
