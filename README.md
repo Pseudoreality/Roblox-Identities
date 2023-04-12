@@ -94,7 +94,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
     - Has no real reason to exist since it's pretty much a copy of CommandBar, but sure Roblox.
 * GameScript
   - Number: 2
-  - Permissions: N/A
+  - Permissions: None
   - InstancesUsed:
     - [`Script`](https://create.roblox.com/docs/reference/engine/classes/Script)
     - [`LocalScript`](https://create.roblox.com/docs/reference/engine/classes/LocalScript)
@@ -227,7 +227,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
     - Tritto! ![](https://cdn.discordapp.com/attachments/980231791984144384/1081551659479613440/image.png)
 * Invalid Identity
   - Number: Any number that isn't a number from 0 to 9
-  - Permissions: N/A
+  - Permissions: None
   - InstancesUsed: N/A
   - Notes: Fallback
     - I considered it important enough to note since it doesn't error when used, but it is just a fallback for when the identity isn't set correctly.
