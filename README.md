@@ -114,7 +114,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
   - Notes: Special script used to run Lua scripts made by Roblox in live games.
     - As mentioned on Roblox's docs, *most*[^appDisclaimer] of their source code is available in `%localappdata%\Roblox\Versions\{clientUploadVersion}\ExtraContent\scripts\CoreScripts` on Windows[^coreScriptSourceCode].
     - Code is *actually* loaded from `%localappdata%\Roblox\Versions\{clientUploadVersion}\ExtraContent\models\DataModelPatch\DataModelPatch.rbxm`
-      - ***DO NOT EDIT THIS MODEL FILE! IT'S SIGNED AND WILL BRICK YOUR STUDIO IF YOU DON'T KNOW WHAT YOU'RE DOING!***
+      - ***DO NOT EDIT THIS MODEL FILE! IT'S SIGNED AND WILL BRICK YOUR PLAYER/STUDIO IF YOU DON'T KNOW WHAT YOU'RE DOING!***
         - This was learned from personal experience; at least back the model up first so you don't have to reinstall Studio so you don't have to suffer the same fate. :pray:
 * CommandBar
   - Number: 4
