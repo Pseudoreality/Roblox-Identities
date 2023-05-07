@@ -174,7 +174,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
     - Surprisingly, can be debugged!
       - Can be done by adding the plugin to a comma seperated FString
         - `FStringDebugCommaSepBuiltInPluginsToDebug`
-        - Must be formatted like `[FileName].[FileExtension], [FileName].[FileExtension]`
+        - Must be formatted like `[FileName].[FileExtension], [FileName].[FileExtension], etc`
           - Case-sensitive
     - There are two types
       - Normal<sub>No better name :(</sub>
