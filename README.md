@@ -145,7 +145,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
       - Local
         - Loaded on the disk from `%localappdata%\Roblox\Plugins`
           - Settings file for all local plugins is located at `%localappdata%\Roblox\{loggedinUserId}\InstalledPlugins\0\settings.json`
-            - This file is also shared with BuiltInPlugins.
+            - This file is also shared with BuiltInPlugins (for some reason, lol).
         - Can be parented under `PluginDebugService`
         - Plugin instance is named `user_[fileName].[fileExtension]`
       - Cloud
