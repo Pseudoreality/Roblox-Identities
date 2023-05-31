@@ -206,7 +206,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
   - Number: 7
   - Permissions: All
   - InstancesUsed **(speculation)**: N/A
-  - Notes: Unknown use case
+  - Notes: Used by RCCService when running gameserver.txt
     - Used by Roblox script executors, like Synapse, to completely ignore all identity-related errors.
       - On a related note, some free exploits use ElevatedStudioPlugin for some dumbass reason.
     - It can create a Player instance so I'm happy enough. ![](https://cdn.discordapp.com/attachments/980231791984144384/1081552399501623296/image.png)
