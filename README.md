@@ -214,7 +214,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
   - Number: 8
   - Permissions: All
   - InstancesUsed **(speculation)**: I can only assume `LuaWebService` based off of the identity's name, but I'm not positive.
-  - Notes: Unknown use case
+  - Notes **(speculation)**: Something to do with `LuaWebService`, RCCService, or both
     - Some Roblox script executors use this for the same reasons they use COM.
     - Ditto! ![](https://cdn.discordapp.com/attachments/980231791984144384/1081551958260863036/image.png)
 * Replicator
