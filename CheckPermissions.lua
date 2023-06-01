@@ -41,7 +41,6 @@ local securityChecks = {
 	}
 }
 
--- format everything
 local message = ""
 
 for index, securityInfo in pairs(securityChecks) do
