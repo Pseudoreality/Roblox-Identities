@@ -1,6 +1,4 @@
 -- didn't use any luau for compatibility
-
--- basically pcall, but only returns it's success
 local function try(fn, ...)
 	return (pcall(fn, ...))
 end
@@ -16,8 +14,6 @@ local securityChecks = {
 		number = 1,
 		canAccess = try(function() return game:GetService("CoreGui").Name end)
 	},
-	-- RobloxPlace doesn't exist, skip
-	-- this is also why I have to provide the number, lel
 	{
 		name = "LocalUserSecurity",
 		number = 3,
