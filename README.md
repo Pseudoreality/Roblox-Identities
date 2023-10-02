@@ -115,7 +115,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
     - As mentioned on Roblox's docs, *most*[^appDisclaimer] of their source code is available in `%localappdata%\Roblox\Versions\{clientUploadVersion}\ExtraContent\scripts\CoreScripts` on Windows[^coreScriptSourceCode].
     - Code is *actually* loaded from `%localappdata%\Roblox\Versions\{clientUploadVersion}\ExtraContent\models\DataModelPatch\DataModelPatch.rbxm`
       - ***DO NOT EDIT THIS MODEL FILE! IT'S SIGNED AND WILL BRICK YOUR PLAYER/STUDIO IF YOU DON'T KNOW WHAT YOU'RE DOING!***
-        - This was learned from personal experience; at least back the model up first so you don't have to reinstall Studio so you don't have to suffer the same fate. :pray:
+        - This was learned from personal experience; at least back the model up first so you don't have to reinstall Studio. :pray:
 * CommandBar
   - Number: 4
   - Permissions:
