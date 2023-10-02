@@ -143,7 +143,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
     - The people that make these are the coolest people ever, and you should thank them.
     - There are two types of StudioPlugins:
       - Local
-        - Loaded on the disk from `%localappdata%\Roblox\Plugins`
+        - Loaded on the disk from `%localappdata%\Roblox\Plugins` (But this can be changed by the user)
           - Settings file for all local plugins is located at `%localappdata%\Roblox\{loggedinUserId}\InstalledPlugins\0\settings.json`
             - This file is also shared with BuiltInPlugins (for some reason, lol).
         - Can be parented under `PluginDebugService`
