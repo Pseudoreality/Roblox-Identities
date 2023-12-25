@@ -105,7 +105,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
   - Notes: It's quite literally an anonymous thread; it's a bit shy ☹
     - There are no set capabilities for it since it could be literally anything.
     - Something to do with the explorer and properties windows uses this in the background with all capabilities but WritePlayerSecurity.
-      - You can test this by trying to change `Player.Name` from properties. It should output some error along the lines of `"The current identity (0) cannot blah blah blah (lacking permission 4)"`
+      - You can test this by trying to change `Player.Name` from properties. It should output some error along the lines of `"The current identity cannot set 'blah blah blah' (lacking capability WritePlayer)"`
     - Another thing uses this with all capabilities but WritePlayerSecurity and RobloxScriptSecurity
       - It's something that executes the factory for all classes in the engine. It just doesn't like trying to create `ParabolaAdornment` or `Player`.
 * LocalGui
