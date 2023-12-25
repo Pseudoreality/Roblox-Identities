@@ -69,8 +69,10 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
   - Notes: Used by `-API` and `-FullAPI` when the dump doesn't know the security of a member OR if a thread security error has no earthy idea what it's looking at.
 * ???
   - Capability: RunClientScript
+  - Notes: Used by some internal identity when running scripts with their RunContext set to Client.
 * ???
   - Capability: RunServerScript
+  - Notes: Ditto for RunClientScript, but RunContext set to Server instead.
 * ???
   - Capability: AccessOutsideWrite
 * ???
