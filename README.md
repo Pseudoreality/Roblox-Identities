@@ -152,7 +152,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
   - Notes: Utility and debugging tool.
     - Most permissive identity a developer can use in Studio.
     - Also used by `Model > Run Script`.
-    - The user can change the identity of the physical bar to either GameScript, CommandBar, and ElevatedStudioPlugin when the user has Internal Permissions.
+    - The user can change the identity of the physical bar to either GameScript, CommandBar, and ElevatedStudioPlugin if they have Internal Permissions.
       - Here's an image of what that looks like: ![](https://i.imgur.com/QPxJvd3.png)
     - Elaborating on InstancesUsed, it's source code (wack as hell to say, I know) can be be read in two different ways.
       - `TemporaryScriptService.CommandLine`, although `TemporaryScriptService` is locked behind RobloxSecurity.
