@@ -154,8 +154,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
     - Also used by `Model > Run Script`.
     - The user can change the identity of the physical bar to either GameScript, CommandBar, and ElevatedStudioPlugin if they have Internal Permissions.
       - Here's an image of what that looks like: ![](https://i.imgur.com/QPxJvd3.png)
-    - Elaborating on InstancesUsed, it's source code (wack as hell to say, I know) can be be read in two different ways.
-      - `TemporaryScriptService.CommandLine`, although `TemporaryScriptService` is locked behind RobloxSecurity.
+    - Elaborating on InstancesUsed, it's source code (wack as hell to say, I know) can be read.
       - `ScriptEditorService.CommandBar`, and call `ScriptDocument.GetText()`
         - Yes, this means *any* Plugin is capable of reading exactly what you're typing in the CommandBar.
 * StudioPlugin
