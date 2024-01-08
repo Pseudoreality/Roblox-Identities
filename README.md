@@ -66,7 +66,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
 * UnknownSecurity
   - Capability: Unknown
   - Number: N/A
-  - Notes: Used by `-API` and `-FullAPI` when the dump doesn't know the security of a member OR if a thread security error has no earthy idea what it's looking at.
+  - Notes: Used by `-API` and `-FullAPI` when the dump doesn't know the security of a member OR if a thread security error has no earthly idea what it's looking at.
 * ???
   - Capability: RunClientScript
   - Notes: Used by some internal identity when running scripts with their RunContext set to Client.
@@ -77,10 +77,13 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
   - Capability: AccessOutsideWrite
 * ???
   - Capability: Unassigned
+  - Notes **(speculation)**: Used for API that do not have an assigned security.
 * ???
   - Capability: AssetRequire
+  - Notes **(speculation)**: Used to control `require` when it is called with an asset id.
 * ???
   - Capability: LoadString
+  - Notes **(speculation)**: Used to control which identities can call `loadstring`
 * ???
   - Capability: Dummy
 * ???
