@@ -170,6 +170,7 @@ Anyway, I hope I can list these as accurately as possible. Please remember that 
     - [`LocalScript`](https://create.roblox.com/docs/reference/engine/classes/LocalScript)
   - Notes: Custom add-on to Studio that any developer can use.
     - The people that make these are the coolest people ever, and you should thank them.
+    - Unlike every other identity, StudioPlugins are allowed to bypass `HttpService.HttpEnabled` in the edit DataModel.
     - There are two types of StudioPlugins:
       - Local
         - Loaded on the disk from `%localappdata%\Roblox\Plugins` (But this can be changed by the user)
