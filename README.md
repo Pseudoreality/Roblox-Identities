@@ -1,3 +1,5 @@
+# This repository is under revision, some parts of this README could be outdated.
+
 This is my personal documentation from my time messing with Roblox's identities and security tags, also known as capabilities now as of a recent update, as well as other miscellaneous information I've discovered about how their code is loaded, with some humor sprinkled in there. I decided to post it on GitHub since a message I've been updating on a private Discord channel is getting too long and I don't feel like buying Nitro. Plus GitHub's Markdown is much better lol.
 
 For anyone who doesn't know what Roblox identities are, I can provide an explanation here. Every script on Roblox is given a number that says what they are allowed access to. This number is called an identity. They exist to keep malicious actors from running sensitive Roblox APIs that you may have seen locked behind, for example, RobloxScriptSecurity when you look up what that one function does at 3 in the morning.
