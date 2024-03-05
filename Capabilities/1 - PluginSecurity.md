@@ -9,9 +9,10 @@ Members with this security are intended for Plugin and/or non-strict internal us
 
 ## Notes
 - This security can be thought of as an "Anti-GameScript" security since every identity but `GameScript` has access to it.
+- [`settings()`](https://create.roblox.com/docs/reference/engine/globals/RobloxGlobals#settings) requires this security to be called.
 
-- A few instances require the thread to possess this capability in order to be instantiated via `Instance.new`.
-  - [`NetworkClient`](https://create.roblox.com/docs/reference/engine/classes/NetworkClient)
-  - [`File`](https://create.roblox.com/docs/reference/engine/classes/File)
-  - [`PluginDragEvent`](https://create.roblox.com/docs/reference/engine/classes/PluginDragEvent)
-  - [`NetworkServer`](https://create.roblox.com/docs/reference/engine/classes/NetworkServer)
+## Required for Instantiation
+- [`NetworkClient`](https://create.roblox.com/docs/reference/engine/classes/NetworkClient)
+- [`File`](https://create.roblox.com/docs/reference/engine/classes/File)
+- [`PluginDragEvent`](https://create.roblox.com/docs/reference/engine/classes/PluginDragEvent)
+- [`NetworkServer`](https://create.roblox.com/docs/reference/engine/classes/NetworkServer)
