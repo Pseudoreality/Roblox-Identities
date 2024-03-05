@@ -8,5 +8,6 @@ Members with this security are intended for non-strict internal usage, but can b
 - **Permission Id:** 3
 
 ## Notes
-- Members with this security are given it for good reason, be careful with what you run through the command bar, even though the damage caused won't be terrible.
+> [!WARNING]
+> Members with this security are given it for good reason, be careful with what you run through the command bar, even though the damage caused won't be terrible.
 - `DebuggerManager()` requires this security to be called and access the returned object.
