@@ -1,7 +1,7 @@
 # None
 
 ## Description
-A *technically* recognized security, as shown in the API Dump, this security identifies the assigned member as accessible by all identities.
+A *technically* recognized security, as shown in the API Dump, members with this security are accessible by all identities.
 
 ## Information
 - **Capability:** N/A
