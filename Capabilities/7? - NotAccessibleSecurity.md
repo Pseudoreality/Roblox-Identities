@@ -4,7 +4,7 @@
 Members with this security are intended to only be written to outside of a running game.
 
 > [!NOTE]
-> In a similar fashion to [`WritePlayerSecurity`](../4%20-%20WritePlayerSecurity.md), this security is only intended for restricting **write access**.
+> In a similar fashion to [`WritePlayerSecurity`](4%20-%20WritePlayerSecurity.md), this security is only intended for restricting **write access**.
 
 ## Information
 - **Capability:** NotAccessible
