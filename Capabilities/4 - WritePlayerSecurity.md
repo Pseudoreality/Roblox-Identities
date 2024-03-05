@@ -12,7 +12,7 @@ This security is used to restrict common [`Player`](https://create.roblox.com/do
 
 ## Notes
 - [`Player`](https://create.roblox.com/docs/reference/engine/classes/Player) instantiation requires this security
-  - This can be substituted with `Players.CreateLocalPlayer()` and `Players.ResetLocalPlayer()` if the identity has [`LocalUserSecurity`](../3%20-%20LocalUserSecurity.md).
+  - This can be substituted with `Players.CreateLocalPlayer()` and `Players.ResetLocalPlayer()` if the identity has [`LocalUserSecurity`](3%20-%20LocalUserSecurity.md).
 - Unfortunately, the official documentation does not show which members have this security. This will be provided in the section below.
 
 ## Required for Members
