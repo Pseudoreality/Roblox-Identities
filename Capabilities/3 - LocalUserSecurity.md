@@ -1,7 +1,7 @@
 # LocalUserSecurity
 
 ## Description
-Members with this security are intended for non-strict internal usage, but can be accessed through the command bar.
+Members with this security are usually intended for internal usage, but developers are allowed to access it through the command bar.
 
 ## Information
 - **Capability:** LocalUser
@@ -9,5 +9,5 @@ Members with this security are intended for non-strict internal usage, but can b
 
 ## Notes
 > [!WARNING]
-> Members with this security are given it for good reason, be careful with what you run through the command bar, even though the damage caused won't be terrible.
+> Members with this security are given it for good reason, be careful with what you run through the command bar, though the damage caused won't be terrible with this security.
 - `DebuggerManager()` requires this security to be called and to access the returned object.
