@@ -13,4 +13,4 @@ Used for a few actions within the Studio UI, such as evaluating expressions on c
 ## Notes
 - Can be used to execute some limited code because of the behavior mentioned in the description.
   - Example: Writing `printidentity()` in certain properties (`BasePart.Size` for example) and pressing enter will output `Current identity is 1`
-  - Writing `error()` will show that the name of the script running is `expressionEval`
+  - Writing `error()` will show that the script runned as `LocalGui` is named "expressionEval"
