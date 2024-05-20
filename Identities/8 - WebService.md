@@ -19,4 +19,4 @@ Probably used by `LuaWebService`, RCCService, or both.
   - `LuaWebService` (Speculation)
 
 ## Notes
-- As mentioned in [`COM`](../7%20-%20COM.md), script executors will used this to bypass identity errors.
+- As mentioned in [`COM`](7%20-%20COM.md), script executors will used this to bypass identity errors.
