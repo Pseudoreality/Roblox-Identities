@@ -15,4 +15,4 @@ Used for the Command Bar, a debugging tool for developers. `CommandBar` is also 
 ## Notes
 - This is the most permissive identity a developer may use on Non-Internal Studio
 - On the topic of the Command Bar itself, because of `ScriptDocument`s, the Command Bar is represented by one. This means that any Plugin is capable of reading anything written to the Command Bar.
-- The Command Bar may also have its identity changed to either [`GameScript`](2%20-%20GameScript.md), `CommandBar`, or [`ElevatedStudioPlugin`](6%20-%20ElevatedStudioPlugin.md) as showed below. ![](https://i.imgur.com/QPxJvd3.png)
+- On Internal Studio, the Command Bar may also have its identity changed to either [`GameScript`](2%20-%20GameScript.md), `CommandBar`, or [`ElevatedStudioPlugin`](6%20-%20ElevatedStudioPlugin.md) as showed below. ![](https://i.imgur.com/QPxJvd3.png)
