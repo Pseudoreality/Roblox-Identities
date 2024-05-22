@@ -4,7 +4,7 @@
 This security is used to restrict common [`Player`](https://create.roblox.com/docs/reference/engine/classes/Player) members to internal, usually non-Lua usage only.
 
 > [!NOTE]
-> As of writing this, this only applies to the **write access** of this aforementioned members.
+> As of writing this, this only applies to the **write access** of the members at the bottom.
 
 ## Information
 - **Capability:** WritePlayer
