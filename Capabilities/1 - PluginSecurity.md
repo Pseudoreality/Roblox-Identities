@@ -8,7 +8,7 @@ Members with this security are intended for Plugin and/or non-strict internal us
 - **Permission Id:** 1
 
 ## Notes
-- This security can be thought of as an "Anti-LiveGame" security since almost every identity but [`GameScript`](../Capabilities/2%20-%20GameScript.md) has access to it.
+- This security can be thought of as an "Anti-LiveGame" security since almost every identity but [`GameScript`](../Identities/2%20-%20GameScript.md) has access to it.
 - [`settings()`](https://create.roblox.com/docs/reference/engine/globals/RobloxGlobals#settings) requires this security to be called.
 
 ## Required for Instantiation
