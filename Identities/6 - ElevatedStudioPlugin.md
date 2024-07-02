@@ -18,7 +18,7 @@ Used for any important studio tools and features that are written in Lua.
 ## Notes
 - The files for BuiltInPlugins are signed and compiled to bytecode already, meaning reading the source code is not possible nor is editing the file. This also prevents loading custom plugins as BuiltInPlugins unless it is done through Internal Studio.
 - BuiltInPlugins can run under four DataModels, those DataModels being `Standalone` (if it is a StandaloneBuiltInPlugin), `Edit`, `PlayClient`, and `PlayServer`
-- These plugins can be debugged by added their names to `FStringDebugCommaSepBuiltInPluginsToDebug`
+- These plugins can be debugged by adding their names to `FStringDebugCommaSepBuiltInPluginsToDebug`
   - This string is case-sensitive and must be formatted as `[fileName].[fileExtension], [fileName].[fileExtension], etc`
 - There are two kinds of BuiltInPlugins
   - Non-Standalone
