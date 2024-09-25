@@ -1,4 +1,4 @@
-# This repository is under revision, some parts of this README could be outdated.
+# This README is extremely old and could be very outdated
 
 This is my personal documentation from my time messing with Roblox's identities and security tags, also known as capabilities now as of a recent update, as well as other miscellaneous information I've discovered about how their code is loaded, with some humor sprinkled in there. I decided to post it on GitHub since a message I've been updating on a private Discord channel is getting too long and I don't feel like buying Nitro. Plus GitHub's Markdown is much better lol.
 
