@@ -7,4 +7,4 @@
 This was most likely the old name for [`PluginSecurity`](./1%20-%20PluginSecurity.md)
 
 ## Information
-- **Permission Id:** 1?
+- **Permission Id:** 1
