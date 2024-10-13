@@ -1,10 +1,8 @@
 # OpenCloud
 
-> [!IMPORTANT]
-> Limited Information, was added on Oct. 1st, 2024 in a preupdate.
-
-## Description (speculation)
-Used to restrict normal GameScript actions from accessing OpenCloud related Engine APIs, [`luau-execution-sessions`](https://devforum.roblox.com/t/beta-open-cloud-engine-api-for-executing-luau/3172185) as an example.
+## Description
+Members with this security are intended to only be used by [Luau Execution Sessions](https://devforum.roblox.com/t/beta-open-cloud-engine-api-for-executing-luau/3172185).
 
 ## Notes
-[Luau Execution Sessions](https://devforum.roblox.com/t/beta-open-cloud-engine-api-for-executing-luau/3172185) are given this capability. Whether or not the identity of these will change from [`GameScript`](../../Identities/2%20-%20GameScript.md) is unknown at this time, waiting for RCCService to update to v645 to test.
+- Currently, `OpenCloud` is not its own capability, but instead exists internally as a sum capability of [`Plugin`](../1%20-%20PluginSecurity.md) and `OpenCloud` called "`PluginOrOpenCloud`"
+- The only members that has this identity is [`Script.Source`](https://create.roblox.com/docs/reference/engine/classes/Script#Source) and [`ModuleScript.Source`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript#Source).
