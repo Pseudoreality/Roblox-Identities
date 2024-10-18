@@ -10,7 +10,7 @@ Used by RCCService when running `gameserver.txt`
   - [`WritePlayerSecurity`](../Capabilities/4%20-%20WritePlayerSecurity.md)
   - [`RobloxScriptSecurity`](../Capabilities/5%20-%20RobloxScriptSecurity.md)
   - [`RobloxSecurity`](../Capabilities/6%20-%20RobloxSecurity.md)
-  - [`NotAccessibleSecurity`](../Capabilities/7%3F%20-%20NotAccessibleSecurity.md)
+  - [`NotAccessibleSecurity`](../Capabilities/7%20-%20NotAccessibleSecurity.md)
 - **Identity:** 7
 - **Related Instances:** N/A
 

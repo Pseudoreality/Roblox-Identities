@@ -1,7 +1,7 @@
 # LocalGui
 
 ## Description
-Used for a few actions within the Studio UI, such as evaluating expressions on certain properties before passing the values off to the thread mentioned in the first bullet of [`Anonymous`](0%20-%20Anonymous.md)'s notes.
+Used for a few actions within the Studio UI, such as evaluating expressions on certain properties before passing the values off to the thread mentioned in the first bullet of [`Anonymous`](00%20-%20Anonymous.md)'s notes.
 
 ## Information
 - **Accessible Capabilities:**

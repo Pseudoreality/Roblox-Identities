@@ -8,7 +8,7 @@ Used for [OpenCloud LuauExecutionSessionTasks](https://create.roblox.com/docs/cl
 
 ## Information
 - **Accessible Capabilities:**
-	- [`OpenCloud`](../Capabilities/Other/OpenCloud.md)
+	- [`OpenCloud`](../Capabilities/OpenCloud.md)
 - **Identity:** 11
 - **Related Instances:** N/A
 
