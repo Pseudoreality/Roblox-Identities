@@ -1,6 +1,8 @@
 # Intro
 This is my personal documentation on Roblox thread identities and security tags, which are now called security capabilities. This can also contain other information regarding how code under a specific identity is loaded by the engine, among some other little things.
-<s>Keep in mind that any of the security capabilities listed within the [`SecurityCapability`](https://create.roblox.com/docs/reference/engine/enums/SecurityCapability) Enum will not be covered currently, but could be covered in the future as Roblox releases Script Sandboxing.</s>
+
+> [!WARNING]
+> This does not cover any of the [Script Capabilities](https://create.roblox.com/docs/scripting/capabilities) that can be sandboxed, as they have their own official documentation page! I will only add the sandboxable capabilities here if the official documentation isn't good enough or it becomes outdated, but this is very unlikely.
 
 If you want to test anything in this repository, you can see the script's identity by calling `printidentity()` in the script. If you want to see the capabilities, you can refer to this repository or you can run the [Luau script provided](CheckCapabilities.luau).
 Of course, depending on how old the client is, identities and their capabilities can be extremely different from other versions of Roblox. So if there comes to be an issue where I made a typo or some information is not correct, please use the most modern version of the client available.

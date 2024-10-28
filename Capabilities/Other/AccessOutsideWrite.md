@@ -1,4 +1,0 @@
-# AccessOutsideWrite
-
-> [!IMPORTANT]
-> No Information.
