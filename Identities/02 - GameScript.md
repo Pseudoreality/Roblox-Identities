@@ -12,4 +12,6 @@ Used for scripts that are authored by a developer with the intent of it being pu
 
 ## Notes
 - This should be the only identity the standard game developer can execute within a live game. If any other is found, it should be reported as an exploit and potential security risk.
+- Code passed to `LogService:ExecuteScript()` will use this identity, assuming the client that calls `LogService:ExecuteScript()` has manage permissions to the current game.
+   - The Developer Console uses `LogService:ExecuteScript()`, meaning it also runs as a `GameScript`
 - In regards to Related Instances, this assumes that the `Script`s and `LocalScript`s are not published/saved as a cloud/builtin/user plugin.
