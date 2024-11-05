@@ -8,6 +8,7 @@ Used for any important studio tools and features that are written in Lua.
   - [`PluginSecurity`](../Capabilities/1%20-%20PluginSecurity.md)
   - [`LocalUserSecurity`](../Capabilities/3%20-%20LocalUserSecurity.md)
   - [`RobloxScriptSecurity`](../Capabilities/5%20-%20RobloxScriptSecurity.md)
+  - [`Assistant`](../Capabilities/Assistant.md)
 - **Identity:** 6
 - **Related Instances:**
   - [`Plugin`](https://create.roblox.com/docs/reference/engine/classes/Plugin)
