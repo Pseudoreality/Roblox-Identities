@@ -14,5 +14,4 @@ Used for [OpenCloud LuauExecutionSessionTask](https://create.roblox.com/docs/clo
 
 ## Notes
 - Under normal circumstances, this runs on an RCCService configured to `CustomScriptExecution`
-	- When any scripts are run under this configuration, there are a few engine apis that are restricted, which are listed on the task docs page
 - The name of the runner is "`TaskScript`"
