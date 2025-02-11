@@ -10,4 +10,4 @@ Members with this security are usually intended for internal usage, but develope
 ## Notes
 > [!WARNING]
 > Members with this security are given it for good reason, be careful with what you run through the command bar, though the damage caused won't be terrible with this security.
-- `DebuggerManager()` requires this security to be called and to access the returned object.
+- The `DebuggerManager` requires this security to be accessed, as mentioned in [`PluginSecurity`](1%20-%20PluginSecurity.md).

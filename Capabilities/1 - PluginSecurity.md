@@ -10,6 +10,7 @@ Members with this security are intended for Plugin and/or non-strict internal us
 ## Notes
 - This security can be thought of as an "Anti-LiveGame" security since almost every identity but [`GameScript`](../Identities/02%20-%20GameScript.md) has access to it.
 - [`settings()`](https://create.roblox.com/docs/reference/engine/globals/RobloxGlobals#settings) requires this security to be called.
+- `DebuggerManager()` requires this security to be called <u>but</u> the Instance returned requires [`LocalUserSecurity`](3%20-%20LocalUserSecurity.md) to be accessed
 
 ## Required for Instantiation
 - [`NetworkClient`](https://create.roblox.com/docs/reference/engine/classes/NetworkClient)
