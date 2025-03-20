@@ -6,4 +6,4 @@
 # Description
 
 # Notes
-- Required to access `StreamingService` and all of its members.
+- Required to called `StreamingService.ExecuteCommandAsync`.
