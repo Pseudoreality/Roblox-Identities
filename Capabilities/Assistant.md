@@ -6,4 +6,4 @@
 # Description
 
 # Notes
-- Required to called `StreamingService.ExecuteCommandAsync`.
+- Required to call `StreamingService.ExecuteCommandAsync`.
