@@ -19,5 +19,7 @@ Members with this security are intended for VERY strict, non-Lua internal usage 
 ## Required for Instantiation
 - `CSGDictionaryService`
 - `FlyweightService`
+- `NetworkClient`
+- `NetworkServer`
 - `NonReplicatedCSGDictionaryService`
 - Possibly some more...
