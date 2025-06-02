@@ -13,10 +13,8 @@ Members with this security are intended for strict internal usage.
 > Some of these members are harmless, but many are landmines that activate certain actions regarding your account / your device.
 
 ## Required for Instantiation
-- `CommandService`
 - `InternalSyncItem`
 - `ParabolaAdornment`
-- `RobloxEditableImage`
 - `StudioAttachment`
 - `StudioCallout`
 - `TrackerStreamAnimation`
