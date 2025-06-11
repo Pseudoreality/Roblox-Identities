@@ -6,8 +6,9 @@ tbd
 ## Notes
 - 04/22/25
 
-## Required for Members
-- `CustomLog` & all associated members.
+## Required for Classes/Members
+- `CustomLog`
+- `Moderation`
 - `Stats.GetHarmonyQualityLevel`
 - `Stats.GetMemoryCategoryNames`
 - `Stats.GetMemoryUsageMbAllCategories`
