@@ -19,7 +19,7 @@ Members with this security are intended for VERY strict, non-Lua internal usage 
 ## Required for Instantiation
 - `CSGDictionaryService`
 - `FlyweightService`
-- `NetworkClient`
-- `NetworkServer`
+- [`NetworkClient`](https://create.roblox.com/docs/reference/engine/classes/NetworkClient)
+- [`NetworkServer`](https://create.roblox.com/docs/reference/engine/classes/NetworkServer)
 - `NonReplicatedCSGDictionaryService`
 - Possibly some more...
