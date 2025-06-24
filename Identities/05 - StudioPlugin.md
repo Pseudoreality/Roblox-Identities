@@ -19,12 +19,16 @@ Used for custom add-ons made by developers.
   - Local
     - Loaded on the disk from the directory specified in `Studio Settings > Studio > Plugins Dir`
     - The settings file for all local plugins is located at `%localappdata%\Roblox\{loggedInUserId}\InstalledPlugins\0\settings.json`. This file is also shared with BuiltInPlugins.
-    - Can be marked as a "Debuggable Plugin," allowing it to be parented under [`PluginDebugService`](https://create.roblox.com/docs/reference/engine/classes/PluginDebugService)
     - The instance is named `user_[fileName].[fileExtension]`
   - Cloud
     - Is also loaded on the disk, but in a more complicated way.
       - Studio will download the plugin from the Roblox website first, or via `StudioService.TryInstallPlugin()` if installed through the toolbox.
       - The plugin model is then placed at `%localappdata%\Roblox\{loggedInUserId}\InstalledPlugins\{pluginId}\{pluginVersionId}\Plugin.rbxm`
         - The plugin's settings file will be in the same folder, if the plugin uses settings at all.
-    - This kind of plugin cannot be marked "debuggable," unlike local plugins.
     - The instance is named `cloud_[pluginId]`
+- As a general note for all plugins, including built-in, all plugins can be marked `IsDebuggable`, which allows [`PluginDebugService`](https://create.roblox.com/docs/reference/engine/classes/PluginDebugService) to accept the plugin as a child and allows the plugin to be saved and reloaded. HOWEVER.. there are nuances to this when it comes to the functionality with different plugins.
+  - Plugins created via the `PluginManager` are not savable. Studio will report back with "Plugin successfully saved as " ... with no file name attached, and does not actually save anything.
+    - Most likely because it wasn't created with a file.
+  - Cloud plugins will sort of work, but it will only save the model file on the disk, which the location of this file is mentioned further down.
+  - Any Built-In Plugin can be marked as debuggable at anytime, and can be reloaded after doing this. This is allowed even without internal permissions, but keep in mind that `IsDebuggable` (and built-in plugins themselves) are [`RobloxScriptSecurity`](../Capabilities/5%20-%20RobloxScriptSecurity.md).
+  - And of course, Local Plugins that were loaded from the disk will work entirely as intended.
