@@ -18,7 +18,7 @@ Used for custom add-ons made by developers.
 - There are two types of developer Plugins.
   - Local
     - Loaded on the disk from the directory specified in `Studio Settings > Studio > Plugins Dir`
-    - The settings file for all local plugins is located at `%localappdata%\Roblox\{loggedInUserId}\InstalledPlugins\0\settings.json`. This file is also shared wuth BuiltInPlugins.
+    - The settings file for all local plugins is located at `%localappdata%\Roblox\{loggedInUserId}\InstalledPlugins\0\settings.json`. This file is also shared with BuiltInPlugins.
     - Can be marked as a "Debuggable Plugin," allowing it to be parented under [`PluginDebugService`](https://create.roblox.com/docs/reference/engine/classes/PluginDebugService)
     - The instance is named `user_[fileName].[fileExtension]`
   - Cloud
