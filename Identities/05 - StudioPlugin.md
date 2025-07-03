@@ -31,7 +31,7 @@ Used for custom add-ons made by developers.
   - Regarding Plugin Permissions. *All* threads that run under `StudioPlugin` are effected by Plugin Permissions unless their Asset Id, which is a part of the identity, is less than 0, which just means it's a local plugin.
     - This does mean that getting `StudioPlugin` through non-legitimate ways will still be affected by Plugin Permissions, since their Asset Id will default to 0.
     - So far, each of these are considered an individual Plugin Permission.
-      - Access to requested domains via `HttpService`, each one is a new window.
+      - Access to requested domains via `HttpService`, each one is its own permission.
         - If it is the first time the plugin has requested for a specific domain, the Http Request will yield infinitely until the user pressed Allow or Deny on the prompt.
         - If Allow is pressed, the request will pass. If Denied, then the function used will error with `HttpService permission denied on domain {url} for plugin {id}.` Future requests, if denied, will repeat the error forever until the user allows it manually via the Plugin Management widget.
       - Access to scripts, or "Script Injection" (does not apply if the plugin isn't a legitimate cloud plugin)
