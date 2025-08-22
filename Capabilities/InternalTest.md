@@ -10,9 +10,13 @@
 
 ## Required for Classes/Members
 - `CustomLog`
-- `Moderation`
+- `ModerationService`
+
+- `CaptureService.GetDeviceInfo`
+- `CaptureService.PromptCaptureGalleryPermission`
 - `Stats.GetHarmonyQualityLevel`
 - `Stats.GetMemoryCategoryNames`
 - `Stats.GetMemoryUsageMbAllCategories`
 - `Stats.ResetHarmonyMemoryTarget`
 - `Stats.SetHarmonyMemoryTarget`
+- `TestService.TakeSnapshot`
