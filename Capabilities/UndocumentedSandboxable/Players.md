@@ -1,6 +1,6 @@
 # Players
 > [!IMPORTANT]
-> This is an undocumented Sandboxable capability. When the capability recieves [official documentation](https://create.roblox.com/docs/scripting/capabilities), this file will be removed!
+> This is an undocumented Sandboxable capability. When the capability receives [official documentation](https://create.roblox.com/docs/scripting/capabilities), this file will be removed!
 
 ## Description
 Access to Instances related to Player and Team objects
