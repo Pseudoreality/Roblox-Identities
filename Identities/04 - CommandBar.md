@@ -7,7 +7,6 @@ Used for the Command Bar, a debugging tool for developers. `CommandBar` is also 
 - **Accessible Capabilities:**
   - [`PluginSecurity`](../Capabilities/1%20-%20PluginSecurity.md)
   - [`LocalUserSecurity`](../Capabilities/3%20-%20LocalUserSecurity.md)
-  - [`Assistant`](../Capabilities/Assistant.md)
 - **Identity:** 4
 - **Related Instances:**
   - [`ScriptDocument`](https://create.roblox.com/docs/reference/engine/classes/ScriptDocument)

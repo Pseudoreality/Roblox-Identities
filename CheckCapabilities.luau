@@ -1,5 +1,3 @@
-local StreamingService = game:GetService("StreamingService")
-
 local function getSuccess(fn, ...)
 	return ( pcall(fn, ...) )
 end
@@ -50,22 +48,24 @@ local capInfos = {
 			Instance.new("MeshPart").MeshId = ""
 		end)
 	},
-	
+
 	-- this is going to return false if the identity doesn't have LocalUser.. but nothing i can do about that for now
 	{
 		name = "Assistant",
 		canAccess = customSuccess(function()
+			local StreamingService = game:GetService("StreamingService")
+			
 			if not StreamingService then
 				return false
 			end
-			
+
 			-- this is going to error regardless because noargs, lacking permission takes priority though
 			local _, errMsg = pcall(StreamingService.ExecuteCommandAsync, StreamingService)
-			
-			if string.find(errMsg, "lacking permission") then
+
+			if string.find(errMsg, "current thread cannot") then
 				return false
 			end
-			
+
 			return true
 		end)
 	},
@@ -77,6 +77,24 @@ local capInfos = {
 		name = "PluginOrOpenCloud",
 		canAccess = getSuccess(function()
 			Instance.new("ModuleScript").Source = ""
+		end)
+	},
+	{
+		name = "RemoteCommand",
+		canAccess = customSuccess(function()
+			local RemoteCommandService = game:GetService("RemoteCommandService")
+			
+			if not RemoteCommandService then
+				return false
+			end
+			
+			local success, errMsg = pcall(RemoteCommandService.GetExecutingPlayer, RemoteCommandService)
+			
+			if not success and string.find(errMsg, "current thread cannot") then
+				return false
+			end
+			
+			return true
 		end)
 	}
 }
@@ -94,7 +112,7 @@ message ..= string.rep("-", #message)
 for _, info in capInfos do
 	local index = if info.index then tostring(info.index) else "N/A"
 	local accessible = info.canAccess and "Yes" or "No"
-	
+
 	message ..= string.format(`\n%-{longestNameLength}s | %-6s | %s`, info.name, index, accessible)
 end
 

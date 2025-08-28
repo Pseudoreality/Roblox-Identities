@@ -1,4 +1,4 @@
-# testingGameScript
+# TestingGameScript
 
 > [!IMPORTANT]
 > Limited Information

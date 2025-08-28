@@ -8,7 +8,6 @@ Used for special scripts that are authored by Roblox to run within live games. T
   - [`PluginSecurity`](../Capabilities/1%20-%20PluginSecurity.md)
   - [`LocalUserSecurity`](../Capabilities/3%20-%20LocalUserSecurity.md)
   - [`RobloxScriptSecurity`](../Capabilities/5%20-%20RobloxScriptSecurity.md)
-  - [`Assistant`](../Capabilities/Assistant.md)
   - [`InternalTest`](../Capabilities/InternalTest.md)
 - **Identity:** 3
 - **Related Instances:**

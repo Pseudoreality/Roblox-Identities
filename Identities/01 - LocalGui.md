@@ -7,7 +7,6 @@ Used for a few actions within the Studio UI, such as evaluating expressions on c
 - **Accessible Capabilities:**
     - [`PluginSecurity`](../Capabilities/1%20-%20PluginSecurity.md)
     - [`LocalUserSecurity`](../Capabilities/3%20-%20LocalUserSecurity.md)
-    - [`Assistant`](../Capabilities/Assistant.md)
 - **Identity:** 1
 - **Related Instances:** N/A
 

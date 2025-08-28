@@ -14,7 +14,6 @@ Probably used by `LuaWebService`, RCCService, or both.
   - [`RobloxScriptSecurity`](../Capabilities/5%20-%20RobloxScriptSecurity.md)
   - [`RobloxSecurity`](../Capabilities/6%20-%20RobloxSecurity.md)
   - [`NotAccessibleSecurity`](../Capabilities/7%20-%20NotAccessibleSecurity.md)
-  - [`Assistant`](../Capabilities/Assistant.md)
 - **Identity:** 8
 - **Related Instances:**
   - `LuaWebService` (Speculation)
