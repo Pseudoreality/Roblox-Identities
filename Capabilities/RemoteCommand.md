@@ -17,3 +17,4 @@
 - `RemoteCommandService.GetReceivedUpdateSignal`
 - `RemoteCommandService.GetStoppingSignal`
 - `RemoteCommandService.SendUpdate`
+- `UniqueIdLookupService.GetOrCreateUniqueIdRemoteCommand`
