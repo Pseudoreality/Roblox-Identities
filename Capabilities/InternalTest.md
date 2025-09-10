@@ -14,9 +14,14 @@
 
 - `CaptureService.GetDeviceInfo`
 - `CaptureService.PromptCaptureGalleryPermission`
+- `Instance.IsPredicted`
+- `Instance.SetPredictionMode`
+- `RunService.FixedHeartbeat`
+- `RunService.ServerFrame`
 - `Stats.GetHarmonyQualityLevel`
 - `Stats.GetMemoryCategoryNames`
 - `Stats.GetMemoryUsageMbAllCategories`
 - `Stats.ResetHarmonyMemoryTarget`
 - `Stats.SetHarmonyMemoryTarget`
 - `TestService.TakeSnapshot`
+- `Workspace.AuthorityMode`
