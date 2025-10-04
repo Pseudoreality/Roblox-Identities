@@ -13,7 +13,6 @@
 - `ModerationService`
 
 - `CaptureService.GetDeviceInfo`
-- `CaptureService.PromptCaptureGalleryPermission`
 - `Instance.IsPredicted`
 - `Instance.SetPredictionMode`
 - `RunService.FixedHeartbeat`
