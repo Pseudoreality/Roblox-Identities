@@ -13,9 +13,12 @@
 - `ModerationService`
 
 - `CaptureService.GetDeviceInfo`
+- `Instance.GetPredictionMode`
 - `Instance.IsPredicted`
 - `Instance.SetPredictionMode`
 - `RunService.FixedHeartbeat`
+- `RunService.Misprediction`
+- `RunService.PredictionState`
 - `RunService.ServerFrame`
 - `Stats.GetHarmonyQualityLevel`
 - `Stats.GetMemoryCategoryNames`
