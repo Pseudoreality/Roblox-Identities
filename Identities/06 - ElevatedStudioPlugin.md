@@ -20,8 +20,10 @@ Used for any important studio tools and features that are written in Lua.
 ## Notes
 - The files for BuiltInPlugins are signed and compiled to bytecode already, meaning reading the source code is not possible nor is editing the file. This also prevents loading custom plugins as BuiltInPlugins unless it is done through Internal Studio.
 - BuiltInPlugins can run under four DataModels, those DataModels being `Standalone` (if it is a StandaloneBuiltInPlugin), `Edit`, `PlayClient`, and `PlayServer`
-- These plugins can be added to [`PluginDebugService`](https://create.roblox.com/docs/reference/engine/classes/PluginDebugService) by adding their names to `FStringDebugCommaSepBuiltInPluginsToDebug`
+- These plugins can be automatically added to [`PluginDebugService`](https://create.roblox.com/docs/reference/engine/classes/PluginDebugService) by adding their names to `FStringDebugCommaSepBuiltInPluginsToDebug`
   - This string is case-sensitive and must be formatted as `[fileName].[fileExtension], [fileName].[fileExtension], etc`
+- The `Plugin` instance for scripts running under this identity *usually* require [`RobloxScriptSecurity`](../Capabilities/5%20-%20RobloxScriptSecurity.md) to access. However, if [`PluginDebugService`](https://create.roblox.com/docs/reference/engine/classes/PluginDebugService) accepts the `Plugin` as a child using whatever method, its access permissions are permanently de-elevated to `Plugin`'s usual [`PluginSecurity`](../Capabilities/1%20-%20PluginSecurity.md) permissions.
+  - To clarify, this does NOT mean that the script identities themselves are demoted to `StudioPlugin`, just that the `Plugin` instance's access security is de-elevated.
 - There are two kinds of BuiltInPlugins
   - Non-Standalone
     - On Windows, they are loaded from `%localappdata%\Roblox\Versions\{versionGuid}\BuiltInPlugins\Optimized_Embedded_Signature`, or `%localappdata%\Roblox\Versions\{versionGuid}\BuiltInPlugins` if `FStringDebugSepBuiltInPlugins` is not empty.
