@@ -9,21 +9,25 @@
 - Added 04/22/25
 
 ## Required for Classes/Members
-- `CustomLog`
-- `ModerationService`
+`CustomLog`
 
-- `CaptureService.GetDeviceInfo`
-- `Instance.GetPredictionMode`
-- `Instance.IsPredicted`
-- `Instance.SetPredictionMode`
-- `RunService.FixedHeartbeat`
-- `RunService.Misprediction`
-- `RunService.PredictionState`
-- `RunService.ServerFrame`
-- `Stats.GetHarmonyQualityLevel`
-- `Stats.GetMemoryCategoryNames`
-- `Stats.GetMemoryUsageMbAllCategories`
-- `Stats.ResetHarmonyMemoryTarget`
-- `Stats.SetHarmonyMemoryTarget`
-- `TestService.TakeSnapshot`
-- `Workspace.AuthorityMode`
+`CaptureService.GetDeviceInfo`
+`CaptureService.InternalCheckPlayabilityAsync`
+`CaptureService.InternalGetStartPlaceIdAsync`
+`Instance.GetPredictionMode`
+`Instance.IsPredicted`
+`Instance.SetPredictionMode`
+`ModerationService.InternalCreateReviewableContentAsync`
+`ModerationService.InternalProcessReviewableContentEvent`
+`ModerationService.InternalRequestReviewableContentReviewAsync`
+`RunService.FixedHeartbeat`
+`RunService.FrameNumber`
+`RunService.Misprediction`
+`RunService.PredictionState`
+`Stats.GetHarmonyQualityLevel`
+`Stats.GetMemoryCategoryNames`
+`Stats.GetMemoryUsageMbAllCategories`
+`Stats.ResetHarmonyMemoryTarget`
+`Stats.SetHarmonyMemoryTarget`
+`TestService.TakeSnapshot`
+`Workspace.AuthorityMode`
