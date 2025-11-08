@@ -11,9 +11,11 @@
 ## Required for Classes/Members
 * `CustomLog`
 
+* `AvatarCreationService.AutoSetupAvatarNewAsync`
 * `CaptureService.GetDeviceInfo`
 * `CaptureService.InternalCheckPlayabilityAsync`
 * `CaptureService.InternalGetStartPlaceIdAsync`
+* `GeometryService.FragmentAsync`
 * `Instance.GetPredictionMode`
 * `Instance.IsPredicted`
 * `Instance.SetPredictionMode`
