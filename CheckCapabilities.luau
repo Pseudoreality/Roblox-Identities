@@ -1,3 +1,6 @@
+local CHECKBOX_EMOJI = utf8.char(0x2705)
+local CROSS_EMOJI = utf8.char(0x274C)
+
 local function getSuccess(fn, ...)
 	return ( pcall(fn, ...) )
 end
@@ -54,7 +57,7 @@ local capInfos = {
 		name = "Assistant",
 		canAccess = customSuccess(function()
 			local StreamingService = game:GetService("StreamingService")
-			
+
 			if not StreamingService then
 				return false
 			end
@@ -83,17 +86,17 @@ local capInfos = {
 		name = "RemoteCommand",
 		canAccess = customSuccess(function()
 			local RemoteCommandService = game:GetService("RemoteCommandService")
-			
+
 			if not RemoteCommandService then
 				return false
 			end
-			
+
 			local success, errMsg = pcall(RemoteCommandService.GetExecutingPlayer, RemoteCommandService)
-			
+
 			if not success and string.find(errMsg, "current thread cannot") then
 				return false
 			end
-			
+
 			return true
 		end)
 	}
@@ -111,7 +114,7 @@ message ..= string.rep("-", #message)
 
 for _, info in capInfos do
 	local index = if info.index then tostring(info.index) else "N/A"
-	local accessible = info.canAccess and "Yes" or "No"
+	local accessible = info.canAccess and CHECKBOX_EMOJI or CROSS_EMOJI
 
 	message ..= string.format(`\n%-{longestNameLength}s | %-6s | %s`, info.name, index, accessible)
 end

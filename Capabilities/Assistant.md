@@ -1,7 +1,7 @@
 # Assistant (Capability)
 
 > [!IMPORTANT]
-> No Information
+> Limited Information
 
 # Description
 
