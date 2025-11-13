@@ -8,7 +8,7 @@ Most likely has something to do with Replication Jobs
 
 ## Information
 - **Accessible Capabilities:**
-  - [`WritePlayerSecurity`](../Capabilities/4%20-%20WritePlayerSecurity.md)
-  - [`RobloxScriptSecurity`](../Capabilities/5%20-%20RobloxScriptSecurity.md)
+  - [`WritePlayer`](../Capabilities/02%20-%20WritePlayer.md)
+  - [`RobloxScript`](../Capabilities/03%20-%20RobloxScript.md)
 - **Identity:** 9
 - **InstancesUsed:** N/A

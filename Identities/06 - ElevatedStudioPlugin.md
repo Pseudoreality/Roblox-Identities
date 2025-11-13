@@ -5,11 +5,11 @@ Used for any important studio tools and features that are written in Lua.
 
 ## Information
 - **Accessible Capabilities:**
-  - [`PluginSecurity`](../Capabilities/1%20-%20PluginSecurity.md)
-  - [`LocalUserSecurity`](../Capabilities/3%20-%20LocalUserSecurity.md)
-  - [`RobloxScriptSecurity`](../Capabilities/5%20-%20RobloxScriptSecurity.md)
-  - [`Assistant`](../Capabilities/Assistant.md)
-  - [`InternalTest`](../Capabilities/InternalTest.md)
+  - [`Plugin`](../Capabilities/00%20-%20Plugin.md)
+  - [`LocalUser`](../Capabilities/01%20-%20LocalUser.md)
+  - [`RobloxScript`](../Capabilities/03%20-%20RobloxScript.md)
+  - [`Assistant`](../Capabilities/62%20-%20Assistant.md)
+  - [`InternalTest`](../Capabilities/60%20-%20InternalTest.md)
 - **Identity:** 6
 - **Related Instances:**
   - [`Plugin`](https://create.roblox.com/docs/reference/engine/classes/Plugin)
@@ -22,7 +22,7 @@ Used for any important studio tools and features that are written in Lua.
 - BuiltInPlugins can run under four DataModels, those DataModels being `Standalone` (if it is a StandaloneBuiltInPlugin), `Edit`, `PlayClient`, and `PlayServer`
 - These plugins can be automatically added to [`PluginDebugService`](https://create.roblox.com/docs/reference/engine/classes/PluginDebugService) by adding their names to `FStringDebugCommaSepBuiltInPluginsToDebug`
   - This string is case-sensitive and must be formatted as `[fileName].[fileExtension], [fileName].[fileExtension], etc`
-- The `Plugin` instance for scripts running under this identity *usually* require [`RobloxScriptSecurity`](../Capabilities/5%20-%20RobloxScriptSecurity.md) to access. However, if [`PluginDebugService`](https://create.roblox.com/docs/reference/engine/classes/PluginDebugService) accepts the `Plugin` as a child using whatever method, its access permissions are permanently de-elevated to `Plugin`'s usual [`PluginSecurity`](../Capabilities/1%20-%20PluginSecurity.md) permissions until the plugin is reloaded.
+- The `Plugin` instance for scripts running under this identity *usually* require [`RobloxScript`](../Capabilities/03%20-%20RobloxScript.md) to access. However, if [`PluginDebugService`](https://create.roblox.com/docs/reference/engine/classes/PluginDebugService) accepts the `Plugin` as a child using whatever method, its access permissions are permanently de-elevated to `Plugin`'s usual [`Plugin`](../Capabilities/00%20-%20Plugin.md) permissions until the plugin is reloaded.
   - To clarify, this does NOT mean that the script identities themselves are demoted to `StudioPlugin`, just that the `Plugin` instance's access security is de-elevated.
 - There are two kinds of BuiltInPlugins
   - Non-Standalone

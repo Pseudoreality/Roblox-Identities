@@ -1,11 +1,11 @@
-# RobloxScriptSecurity
+# RobloxScript
 
 ## Description
 Members with this security are intended for strict internal usage.
 
 ## Information
-- **Capability:** RobloxScript
-- **Permission Id:** 5
+- **Security Name:** Roblox Script Security
+- **Index:** 3
 
 ## Notes
 > [!WARNING]

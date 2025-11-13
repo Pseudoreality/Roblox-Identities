@@ -8,12 +8,12 @@ Probably used by `LuaWebService`, RCCService, or both.
 
 ## Information
 - **Accessible Capabilities:**
-  - [`PluginSecurity`](../Capabilities/1%20-%20PluginSecurity.md)
-  - [`LocalUserSecurity`](../Capabilities/3%20-%20LocalUserSecurity.md)
-  - [`WritePlayerSecurity`](../Capabilities/4%20-%20WritePlayerSecurity.md)
-  - [`RobloxScriptSecurity`](../Capabilities/5%20-%20RobloxScriptSecurity.md)
-  - [`RobloxSecurity`](../Capabilities/6%20-%20RobloxSecurity.md)
-  - [`NotAccessibleSecurity`](../Capabilities/7%20-%20NotAccessibleSecurity.md)
+  - [`Plugin`](../Capabilities/00%20-%20Plugin.md)
+  - [`LocalUser`](../Capabilities/01%20-%20LocalUser.md)
+  - [`WritePlayer`](../Capabilities/02%20-%20WritePlayer.md)
+  - [`RobloxScript`](../Capabilities/03%20-%20RobloxScript.md)
+  - [`RobloxEngine`](../Capabilities/04%20-%20RobloxEngine.md)
+  - [`NotAccessible`](../Capabilities/05%20-%20NotAccessible.md)
 - **Identity:** 8
 - **Related Instances:**
   - `LuaWebService` (Speculation)

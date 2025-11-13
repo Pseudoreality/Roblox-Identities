@@ -1,10 +1,10 @@
 # InternalTest
 
-> [!IMPORTANT]
-> Limited Information
-
 ## Description
 Members with this capability are intended for strict internal usage, usually with the purpose of testing an API before making it public. There's a high possibility that most members with this capability are de-elevated to developer accessible capabilities in the future.
+
+## Information
+- **Index:** 60
 
 ## Notes
 - Added 04/22/25

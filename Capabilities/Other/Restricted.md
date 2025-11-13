@@ -1,4 +1,0 @@
-# Restricted
-
-> [!IMPORTANT]
-> No Information.

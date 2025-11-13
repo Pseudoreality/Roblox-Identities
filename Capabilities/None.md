@@ -4,7 +4,3 @@
 
 ## Description
 Used by the API Dump to show that a member can be accessed by all identities.
-
-## Information
-- **Capability:** N/A
-- **Permission Id:** N/A

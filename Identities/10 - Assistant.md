@@ -5,9 +5,9 @@ Used by the AI Assistant when it runs code.
 
 ## Information
 - **Accessible Capabilities:**
-	- [`Assistant`](../Capabilities/Assistant.md)
-	- [`PluginSecurity`](../Capabilities/1%20-%20PluginSecurity.md)
-	- [`LocalUserSecurity`](../Capabilities/3%20-%20LocalUserSecurity.md)
+	- [`Assistant`](../Capabilities/62%20-%20Assistant.md)
+	- [`Plugin`](../Capabilities/00%20-%20Plugin.md)
+	- [`LocalUser`](../Capabilities/01%20-%20LocalUser.md)
 - **Identity:** 10
 - **Related Instances:** [`Script`](https://create.roblox.com/docs/reference/engine/classes/Script)
 

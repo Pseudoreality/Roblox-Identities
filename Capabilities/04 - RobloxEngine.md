@@ -1,11 +1,11 @@
-# RobloxSecurity
+# RobloxEngine
 
 ## Description
 Members with this security are intended for VERY strict, non-Lua internal usage only.
 
 ## Information
-- **Capability:** RobloxEngine
-- **Permission Id:** 6
+- **Security Name:** Roblox Security
+- **Index:** 4
 
 ## Notes
 > [!CAUTION]

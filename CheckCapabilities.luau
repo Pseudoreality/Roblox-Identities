@@ -13,48 +13,80 @@ end
 local capInfos = {
 	{
 		name = "Plugin",
-		index = 1,
+		index = 0,
 		canAccess = getSuccess(function()
 			return game:GetService("CoreGui").Name
 		end)
 	},
 	{
 		name = "LocalUser",
-		index = 3,
+		index = 1,
 		canAccess = getSuccess(function()
 			return game.DataCost
 		end)
 	},
 	{
 		name = "WritePlayer",
-		index = 4,
+		index = 2,
 		canAccess = getSuccess(Instance.new, "Player")
 	},
 	{
 		name = "RobloxScript",
-		index = 5,
+		index = 3,
 		canAccess = getSuccess(function()
 			return game:GetService("CorePackages").Name
 		end)
 	},
 	{
 		name = "RobloxEngine",
-		index = 6,
+		index = 4,
 		canAccess = getSuccess(function()
 			return Instance.new("SurfaceAppearance").TexturePack
 		end)
 	},
 	{
 		name = "NotAccessible",
-		index = 7,
+		index = 5,
 		canAccess = getSuccess(function()
 			Instance.new("MeshPart").MeshId = ""
 		end)
 	},
 
+	{
+		name = "RemoteCommand",
+		index = 59,
+		canAccess = customSuccess(function()
+			local RemoteCommandService = game:GetService("RemoteCommandService")
+
+			if not RemoteCommandService then
+				return false
+			end
+
+			local success, errMsg = pcall(RemoteCommandService.GetExecutingPlayer, RemoteCommandService)
+
+			if not success and string.find(errMsg, "current thread cannot") then
+				return false
+			end
+
+			return true
+		end)
+	},
+	{
+		name = "InternalTest",
+		index = 60,
+		canAccess = getSuccess(Instance.new, "CustomLog")
+	},
+	{
+		name = "PluginOrOpenCloud",
+		index = 61,
+		canAccess = getSuccess(function()
+			Instance.new("ModuleScript").Source = ""
+		end)
+	},
 	-- this is going to return false if the identity doesn't have LocalUser.. but nothing i can do about that for now
 	{
 		name = "Assistant",
+		index = 62,
 		canAccess = customSuccess(function()
 			local StreamingService = game:GetService("StreamingService")
 
@@ -72,34 +104,6 @@ local capInfos = {
 			return true
 		end)
 	},
-	{
-		name = "InternalTest",
-		canAccess = getSuccess(Instance.new, "CustomLog")
-	},
-	{
-		name = "PluginOrOpenCloud",
-		canAccess = getSuccess(function()
-			Instance.new("ModuleScript").Source = ""
-		end)
-	},
-	{
-		name = "RemoteCommand",
-		canAccess = customSuccess(function()
-			local RemoteCommandService = game:GetService("RemoteCommandService")
-
-			if not RemoteCommandService then
-				return false
-			end
-
-			local success, errMsg = pcall(RemoteCommandService.GetExecutingPlayer, RemoteCommandService)
-
-			if not success and string.find(errMsg, "current thread cannot") then
-				return false
-			end
-
-			return true
-		end)
-	}
 }
 
 local longestNameLength = 0

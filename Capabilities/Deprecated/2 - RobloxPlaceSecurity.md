@@ -7,7 +7,8 @@
 This security was most likely for experimental features / features that only places owned by Roblox were intended to use.
 
 ## Information
-- **Permission Id:** 2
+- **Index:** 2
 
 ## Notes
-- Any member under this security were changed to either [`LocalUserSecurity`](./3%20-%20LocalUserSecurity) or [`RobloxScriptSecurity`](./5%20-%20RobloxScriptSecurity) when `RobloxPlaceSecurity` was removed from the engine.
+- Any member under this security were changed to either [`LocalUser`](../01%20-%20LocalUser) or [`RobloxScript`](../03%20-%20RobloxScript) when `RobloxPlaceSecurity` was removed from the engine.
+- [`InternalTest`](../60%20-%20InternalTest) can be thought of as today's version of this security.

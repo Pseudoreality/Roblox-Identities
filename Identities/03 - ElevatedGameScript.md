@@ -5,19 +5,19 @@ Used for special scripts that are authored by Roblox to run within live games. T
 
 ## Information
 - **Accessible Capabilities:**
-  - [`PluginSecurity`](../Capabilities/1%20-%20PluginSecurity.md)
-  - [`LocalUserSecurity`](../Capabilities/3%20-%20LocalUserSecurity.md)
-  - [`RobloxScriptSecurity`](../Capabilities/5%20-%20RobloxScriptSecurity.md)
-  - [`InternalTest`](../Capabilities/InternalTest.md)
+  - [`Plugin`](../Capabilities/00%20-%20Plugin.md)
+  - [`LocalUser`](../Capabilities/01%20-%20LocalUser.md)
+  - [`RobloxScript`](../Capabilities/03%20-%20RobloxScript.md)
+  - [`InternalTest`](../Capabilities/60%20-%20InternalTest.md)
 - **Identity:** 3
 - **Related Instances:**
   - `CoreScript`
 
 ## Notes
 - Most[^appCoreScriptDisclaimer] `CoreScript` source code can be found in `%localappdata%\Roblox\Versions\{clientUploadVersion}\ExtraContent\scripts\CoreScripts` on Windows, assuming the version used is a Roblox Studio installation.
-- However, the code for these scripts are run from `%localappdata%\Roblox\Versions\{clientUploadVersion}\ExtraContent\models\DataModelPatch\DataModelPatch.rbxm`
+- However, the code for these scripts are run from several different DataModelPatches. The most notable one being `%localappdata%\Roblox\Versions\{clientUploadVersion}\ExtraContent\models\DataModelPatch\DataModelPatch.rbxm`
 > [!WARNING]
-> Do NOT attempt to edit `DataModelPatch.rbxm` without backing it up. This file has a signature, meaning any change you make to it will almost always corrupt the file and in most cases with this file, leaves Roblox Studio/Roblox Player in a non-functional state.
-> `DataModelPatch.rbxm` will also *usually* only work for the version of Roblox you find it in, so don't use an old backup if Roblox updates.
+> Do NOT attempt to edit the `rbxm` files from the DataModelPatch folders without backing it up. These files have signatures, meaning any change you make to them will almost always corrupt the file and, in most cases with this file, leaves Roblox Studio/Roblox Player in a non-functional state.
+> These files will also *usually* only work for the version of Roblox you find it in, so don't use an old backup if Roblox updates.
 
-[^appCoreScriptDisclaimer]: `CoreScript`s that run on home page of the Roblox App, such as `LuaAppStarterScript`, will not have their source code provided since they are not a part of Roblox Studio. RCCService's `CoreScript`s will also not be found here for obvious reasons.
+[^appCoreScriptDisclaimer]: `CoreScript`s that are only present on Roblox Player, such as `LuaAppStarterScript`, will not have their source code provided since they are not a part of Roblox Studio. RCCService's `CoreScript`s will also not be found here for obvious reasons.
