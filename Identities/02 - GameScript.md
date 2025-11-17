@@ -1,8 +1,5 @@
 # GameScript
 
-> [!IMPORTANT]
-> Subject to Change
-
 ## Description
 Used for scripts that are authored by a developer with the intent of it being published with a game. It's also used by `ExecutedRemoteCommand`s issued by the Roblox Studio client.
 
