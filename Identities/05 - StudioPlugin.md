@@ -25,7 +25,7 @@ Used for custom add-ons made by developers.
       - Is also loaded on the disk, but in a more complicated way.
         - Studio will download the plugin from the Roblox website first, or via `StudioService.TryInstallPlugin()` if installed through the toolbox.
         - The plugin model is then placed at `%localappdata%\Roblox\{loggedInUserId}\InstalledPlugins\{pluginId}\{pluginVersionId}\Plugin.rbxm`
-          - The plugin's settings file will be in the same folder, if the plugin uses settings at all.
+        - The plugin's settings file will be located at `%localappdata%\Roblox\{loggedInUserId}\InstalledPlugins\{pluginId}`, if the plugin uses settings at all.
       - The instance is named `cloud_[pluginId]`
   ### Plugin Permissions
   - Regarding Plugin Permissions. *All* threads that run under `StudioPlugin` are effected by Plugin Permissions unless their Asset Id, which is a part of the identity, is less than 0, which just means it's a local plugin.
