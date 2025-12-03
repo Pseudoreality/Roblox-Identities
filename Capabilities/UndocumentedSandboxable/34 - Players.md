@@ -6,5 +6,6 @@
 Access to Instances related to Player and Team objects
 
 ## Assigned Instances
-- [`Player`](https://create.roblox.com/docs/reference/engine/classes/Player), [`Players`](https://create.roblox.com/docs/reference/engine/classes/Players), [`StarterPlayer`](https://create.roblox.com/docs/reference/engine/classes/StarterPlayer)
+- [`Backpack`](https://create.roblox.com/docs/reference/engine/classes/Backpack), [`Player`](https://create.roblox.com/docs/reference/engine/classes/Player), [`Players`](https://create.roblox.com/docs/reference/engine/classes/Players), [`StarterPlayer`](https://create.roblox.com/docs/reference/engine/classes/StarterPlayer)
+- [`SpawnLocation`](https://create.roblox.com/docs/reference/engine/classes/SpawnLocation)
 - [`Team`](https://create.roblox.com/docs/reference/engine/classes/Team), [`Teams`](https://create.roblox.com/docs/reference/engine/classes/Teams)
