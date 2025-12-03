@@ -33,3 +33,4 @@ Members with this capability are intended for strict internal usage, usually wit
 * `Stats.SetHarmonyMemoryTarget`
 * `TestService.TakeSnapshot`
 * `Workspace.AuthorityMode`
+* `Workspace.NextGenerationReplication`
