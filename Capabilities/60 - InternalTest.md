@@ -21,16 +21,11 @@ Members with this capability are intended for strict internal usage, usually wit
 * `ModerationService.InternalCreateReviewableContentAsync`
 * `ModerationService.InternalProcessReviewableContentEvent`
 * `ModerationService.InternalRequestReviewableContentReviewAsync`
-* `RunService.BindToSimulation`
 * `RunService.FrameNumber`
-* `RunService.GetPredictionStatus`
 * `RunService.Misprediction`
-* `RunService.SetPredictionMode`
 * `Stats.GetHarmonyQualityLevel`
 * `Stats.GetMemoryCategoryNames`
 * `Stats.GetMemoryUsageMbAllCategories`
 * `Stats.ResetHarmonyMemoryTarget`
 * `Stats.SetHarmonyMemoryTarget`
 * `TestService.TakeSnapshot`
-* `Workspace.AuthorityMode`
-* `Workspace.NextGenerationReplication`
