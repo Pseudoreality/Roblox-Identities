@@ -13,3 +13,6 @@ Members with this security are intended to only be written to outside of a runni
 ## Notes
 - Some members under this security may be changed through the properties window.
 - An easier way to think of this security is the `NotScriptable` tag, but for write access only.
+- Interestingly enough, despite the **write access** note, there are two things that restrict general access.
+  - `NetworkSettings.OpenCertManagerDialog` (Which it doesn't even matter that it has this security because it's `NotScriptable` to begin with)
+  - `RomarkRbxAnalyticsService`
