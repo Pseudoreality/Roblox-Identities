@@ -10,6 +10,8 @@ Used for scripts that are authored by a developer with the intent of it being pu
 - **Related Instances:**
 	- [`Script`](https://create.roblox.com/docs/reference/engine/classes/Script)
 	- [`LocalScript`](https://create.roblox.com/docs/reference/engine/classes/LocalScript)
+- `RemoteCommandService`
+- `ExecutedRemoteCommand`
 
 ## Notes
 - This should be the only identity the standard game developer can execute within a live game. If any other is found, it should be reported as an exploit and potential security risk.
