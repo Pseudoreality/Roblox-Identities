@@ -1,10 +1,7 @@
 # Replicator
 
 ## Description
-> [!IMPORTANT]
-> Speculation.
-
-Most likely has something to do with Replication Jobs
+Used for Luau threads that handle the replication of the game. This is for initial replication, such as pressing the PlayTest button on Studio, as well as most property changes.
 
 ## Information
 - **Accessible Capabilities:**
