@@ -2,6 +2,8 @@
 
 ## Description
 Used by the AI Assistant when it runs code.
+<!--are they going to kill this identity? LOL-->
+If `FFlagAssistantAtCommandBarSecurity` is `true`, the code will run with [`CommandBar`](04%20-%20CommandBar.md) instead.
 
 ## Information
 - **Accessible Capabilities:**
