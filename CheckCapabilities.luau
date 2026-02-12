@@ -41,7 +41,7 @@ local capInfos = {
 		name = "RobloxEngine",
 		index = 4,
 		canAccess = getSuccess(function()
-			return Instance.new("SurfaceAppearance").TexturePack
+			return Instance.new("Decal").TexturePack
 		end)
 	},
 	{
