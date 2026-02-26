@@ -83,8 +83,8 @@ local capInfos = {
 			Instance.new("ModuleScript").Source = ""
 		end)
 	},
-	-- this is going to return false if the identity doesn't have LocalUser.. but nothing i can do about that for now
-	{
+	-- nothing in the engine has Assistant anymore as StreamingService was deleted, not worth to check against anymore
+	--[[{
 		name = "Assistant",
 		index = 62,
 		canAccess = customSuccess(function()
@@ -103,7 +103,7 @@ local capInfos = {
 
 			return true
 		end)
-	},
+	},]]
 }
 
 local longestNameLength = 0
