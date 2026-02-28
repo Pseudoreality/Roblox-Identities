@@ -7,6 +7,7 @@ Used for the Command Bar, a debugging tool for developers. `CommandBar` is also 
 - **Accessible Capabilities:**
   - [`Plugin`](../Capabilities/00%20-%20Plugin.md)
   - [`LocalUser`](../Capabilities/01%20-%20LocalUser.md)
+  - [`InternalTest`](../Capabilities/60%20-%20InternalTest.md) (If `FFlagDebugLocalPluginsElevatedForInternal` is `true`, and Internal Permissions is enabled)
 - **Identity:** 4
 - **Related Instances:**
   - [`ScriptDocument`](https://create.roblox.com/docs/reference/engine/classes/ScriptDocument)

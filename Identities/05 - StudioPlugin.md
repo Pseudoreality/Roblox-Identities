@@ -6,6 +6,7 @@ Used for custom add-ons made by developers.
 ## Information
 - **Accessible Capabilities:**
   - [`Plugin`](../Capabilities/00%20-%20Plugin.md)
+  - [`InternalTest`](../Capabilities/60%20-%20InternalTest.md) (If `FFlagDebugLocalPluginsElevatedForInternal` is `true`, the thread is run from a Local plugin, and Internal Permissions is enabled)
 - **Identity:** 5
 - **Related Instances:**
   - [`Plugin`](https://create.roblox.com/docs/reference/engine/classes/Plugin)
