@@ -5,7 +5,8 @@
 ## Description
 Access to API that manipulates a majority of a character's properties.
 
-## Assigned API, as of v710
+## Assigned API, as of v711
+- [`ControllerManager`](https://create.roblox.com/docs/reference/engine/classes/ControllerManager)
 - [`Explosion`](https://create.roblox.com/docs/reference/engine/classes/Explosion)
 - [`ForceField`](https://create.roblox.com/docs/reference/engine/classes/ForceField)
 - `Humanoid` Members:
@@ -64,4 +65,7 @@ Access to API that manipulates a majority of a character's properties.
   - [`Humanoid.WalkSpeed`](https://create.roblox.com/docs/reference/engine/classes/Humanoid#WalkSpeed) (also requires **Avatar**)
   - [`Humanoid.WalkToPart`](https://create.roblox.com/docs/reference/engine/classes/Humanoid#WalkToPart) (also requires **Avatar**)
   - [`Humanoid.WalkToPoint`](https://create.roblox.com/docs/reference/engine/classes/Humanoid#WalkToPoint) (also requires **Avatar**)
+- [`Platform`](https://create.roblox.com/docs/reference/engine/classes/Platform)
+- [`Seat`](https://create.roblox.com/docs/reference/engine/classes/Seat)
 - [`Status`](https://create.roblox.com/docs/reference/engine/classes/Status)
+- [`VehicleSeat`](https://create.roblox.com/docs/reference/engine/classes/VehicleSeat)
