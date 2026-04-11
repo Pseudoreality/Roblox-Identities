@@ -9,8 +9,14 @@ Members with this security are intended to be used by [`LuauExecutionSessionTask
 
 ## Notes
 
-## Required for Members
-- [`Script.Source`](https://create.roblox.com/docs/reference/engine/classes/Script#Source)
-- [`ModuleScript.Source`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript#Source)
-- [`SerializationService.SerializeInstancesAsync`](https://create.roblox.com/docs/reference/engine/classes/SerializationService#SerializeInstancesAsync)
-- [`SerializationService.DeserializeInstancesAsync`](https://create.roblox.com/docs/reference/engine/classes/SerializationService#DeserializeInstancesAsync)
+## Assigned API, as of v716
+* [`SerializationService`](https://create.roblox.com/docs/reference/engine/classes/SerializationService)
+* [`ModuleScript`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript) Members:
+	* [`ModuleScript.Source`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript#Source)
+* [`RunService`](https://create.roblox.com/docs/reference/engine/classes/RunService) Members:
+	* [`RunService.Misprediction`](https://create.roblox.com/docs/reference/engine/classes/RunService#Misprediction)
+* [`Script`](https://create.roblox.com/docs/reference/engine/classes/Script) Members:
+	* [`Script.Source`](https://create.roblox.com/docs/reference/engine/classes/Script#Source)
+* [`ScriptContext`](https://create.roblox.com/docs/reference/engine/classes/ScriptContext) Members:
+	* [`ScriptContext.EnableCoverage`](https://create.roblox.com/docs/reference/engine/classes/ScriptContext#EnableCoverage)
+	* [`ScriptContext.GetCoverageStats`](https://create.roblox.com/docs/reference/engine/classes/ScriptContext#GetCoverageStats)

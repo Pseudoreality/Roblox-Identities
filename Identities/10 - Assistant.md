@@ -1,12 +1,8 @@
 # Assistant (Identity)
-<!-- get ready to deprecate this when it's killed from the engine, SteamingService was deleted v710 so use that for reference -->
-
-> [!IMPORTANT]
-> This identity is obsolete and isn't used by anything in the engine anymore. This will be moved to a deprecated folder when it's removed from the engine.
 
 ## Description
-<!--Used by the AI Assistant when it runs code.-->
-#### Obsolete Identity, the AI Assistant runs at [`CommandBar`](04%20-%20CommandBar.md) now.
+Used by the AI Assistant when it runs code.
+<!--#### Obsolete Identity, the AI Assistant runs at [`CommandBar`](04%20-%20CommandBar.md) now.-->
 
 ## Information
 - **Accessible Capabilities:**

@@ -1,7 +1,7 @@
 # Plugin
 
 ## Description
-Members with this security are intended for Plugin and/or non-strict internal usage.
+Members with this security are intended for Plugin and/or non-strict internal usage. Identities with this capability are automatically given [`PluginOrOpenCloud`](61%20-%20PluginOrOpenCloud.md).
 
 ## Information
 - **Security Name:** Plugin Security
