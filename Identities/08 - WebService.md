@@ -1,10 +1,7 @@
 # WebService
 
 ## Description
-> [!IMPORTANT]
-> Speculation
-
-Probably used by `LuaWebService`, RCCService, or both.
+Used by RCCService when running `gameserver.txt`. Also used by Roblox Studio when running a game server, either via PlaySolo or LocalServer.
 
 ## Information
 - **Accessible Capabilities:**
@@ -15,8 +12,7 @@ Probably used by `LuaWebService`, RCCService, or both.
   - [`RobloxEngine`](../Capabilities/04%20-%20RobloxEngine.md)
   - [`NotAccessible`](../Capabilities/05%20-%20NotAccessible.md)
 - **Identity:** 8
-- **Related Instances:**
-  - `LuaWebService` (Speculation)
+- **Related Instances:** N/A
 
 ## Notes
 - As mentioned in [`COM`](07%20-%20COM.md), script executors will use this identity to bypass identity errors.

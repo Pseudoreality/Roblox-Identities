@@ -1,7 +1,7 @@
 # COM
 
 ## Description
-Used by RCCService when running `gameserver.txt`
+Used by the DataModelLoader, if the DataModel is not a cloud edit client.
 
 ## Information
 - **Accessible Capabilities:**
