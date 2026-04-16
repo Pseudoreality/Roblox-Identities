@@ -7,12 +7,12 @@ Members with this security are intended to be used by [`LuauExecutionSessionTask
 - **Security Name:** OpenCloud Security
 - **Index:** 61
 
-## Assigned API, as of v716
+## Assigned API, as of v717
 * [`SerializationService`](https://create.roblox.com/docs/reference/engine/classes/SerializationService)
 * [`ModuleScript`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript) Members:
 	* [`ModuleScript.Source`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript#Source)
 * [`RunService`](https://create.roblox.com/docs/reference/engine/classes/RunService) Members:
-	* [`RunService.Misprediction`](https://create.roblox.com/docs/reference/engine/classes/RunService#Misprediction)
+	* [`RunService.Misprediction`](https://create.roblox.com/docs/reference/engine/classes/RunService#Misprediction) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 * [`Script`](https://create.roblox.com/docs/reference/engine/classes/Script) Members:
 	* [`Script.Source`](https://create.roblox.com/docs/reference/engine/classes/Script#Source)
 * [`ScriptContext`](https://create.roblox.com/docs/reference/engine/classes/ScriptContext) Members:

@@ -9,10 +9,9 @@ Members with this capability are intended for strict internal usage, usually for
 ## Notes
 - Added 04/22/25
 
-## Assigned API, as of v716
+## Assigned API, as of v717
 * [`CustomLog`](https://create.roblox.com/docs/reference/engine/classes/CustomLog)
 * [`RealtimeMedia`](https://create.roblox.com/docs/reference/engine/classes/RealtimeMedia)
-* [`TestCase`](https://create.roblox.com/docs/reference/engine/classes/TestCase)
 * [`AnalyticsService`](https://create.roblox.com/docs/reference/engine/classes/AnalyticsService) Members:
 	* [`AnalyticsService.GetDurationLoggerTimestamp`](https://create.roblox.com/docs/reference/engine/classes/AnalyticsService#GetDurationLoggerTimestamp) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 * [`CaptureService`](https://create.roblox.com/docs/reference/engine/classes/CaptureService) Members:
@@ -32,8 +31,7 @@ Members with this capability are intended for strict internal usage, usually for
 	* [`Stats.ResetHarmonyMemoryTarget`](https://create.roblox.com/docs/reference/engine/classes/Stats#ResetHarmonyMemoryTarget)
 	* [`Stats.SetHarmonyMemoryTarget`](https://create.roblox.com/docs/reference/engine/classes/Stats#SetHarmonyMemoryTarget)
 * [`TestService`](https://create.roblox.com/docs/reference/engine/classes/TestService) Members:
-	* [`TestService.RegisterTest`](https://create.roblox.com/docs/reference/engine/classes/TestService#RegisterTest)
+	* [`TestService.RequestValidationAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#RequestValidationAsync)
 	* [`TestService.StartTestSession`](https://create.roblox.com/docs/reference/engine/classes/TestService#StartTestSession)
 	* [`TestService.StopTestSession`](https://create.roblox.com/docs/reference/engine/classes/TestService#StopTestSession)
-	* [`TestService.TakeSnapshot`](https://create.roblox.com/docs/reference/engine/classes/TestService#TakeSnapshot)
 	* [`TestService.getTestSessionProviderStats`](https://create.roblox.com/docs/reference/engine/classes/TestService#getTestSessionProviderStats)
