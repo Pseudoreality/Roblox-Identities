@@ -9,13 +9,6 @@ Some members that are given this security are usually only given it to restrict 
 - **Index:** 5
 
 ## Notes
-- It should be considered strange if a member recieves this security on both read and write. In these cases, they usually have `NotScriptable` paired with it. Below is a list of said strange members as of v710:
+- It should be considered strange if a member recieves this security on both read and write. In these cases, they usually have `NotScriptable` paired with it. Below is a list of said strange members as of v719:
 	- `RomarkRbxAnalyticsService`
-	- `NetworkSettings.InboundNetworkLossPercent (NotScriptable)`
-	- `NetworkSettings.InboundNetworkMaxDelayMs (NotScriptable)`
-	- `NetworkSettings.InboundNetworkMinDelayMs (NotScriptable)`
-	- `NetworkSettings.NetworkEmulationEnabled (NotScriptable)`
 	- `NetworkSettings.OpenCertManagerDialog (NotScriptable)`
-    - `NetworkSettings.OutboundNetworkLossPercent (NotScriptable)`
-    - `NetworkSettings.OutboundNetworkMaxDelayMs (NotScriptable)`
-    - `NetworkSettings.OutboundNetworkMinDelayMs (NotScriptable)`

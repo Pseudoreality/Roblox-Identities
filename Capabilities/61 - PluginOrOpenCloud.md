@@ -7,7 +7,7 @@ Members with this security are intended to be used by [`LuauExecutionSessionTask
 - **Security Name:** OpenCloud Security
 - **Index:** 61
 
-## Assigned API, as of v717
+## Assigned API, as of v719
 * [`SerializationService`](https://create.roblox.com/docs/reference/engine/classes/SerializationService)
 * [`ModuleScript`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript) Members:
 	* [`ModuleScript.Source`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript#Source)
