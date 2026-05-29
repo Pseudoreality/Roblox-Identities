@@ -1,9 +1,6 @@
 # UndoStack
 
 ## Description
-> [!NOTE]
-> Currently, this behavior relies on `FFlagUndoStackIdentity` being `true`
-
 Used for Luau threads that handle the Undo/Redo actions on Studio.
 
 ## Information
