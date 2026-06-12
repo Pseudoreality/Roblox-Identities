@@ -1,17 +1,17 @@
 # CommandBar
 
 ## Description
-Used for the Command Bar, a debugging tool for developers. `CommandBar` is also used for the `Model > Run Script` on the old Studio UI or `Window > Script > Run Script` on the New Gen Studio UI.
+Used for the Command Bar, a debugging tool for developers. `CommandBar` is also used for the **Window** > **Script** > **Run Script** action.
 
 ## Information
 - **Accessible Capabilities:**
-  - [`Plugin`](../Capabilities/00%20-%20Plugin.md)
-  - [`LocalUser`](../Capabilities/01%20-%20LocalUser.md)
-  - [`InternalTest`](../Capabilities/60%20-%20InternalTest.md) (If `FFlagDebugLocalPluginsElevatedForInternal` is `true`, and Internal Permissions is enabled)
+	- [`Plugin`](../Capabilities/00%20-%20Plugin.md)
+	- [`LocalUser`](../Capabilities/01%20-%20LocalUser.md)
+	- [`InternalTest`](../Capabilities/60%20-%20InternalTest.md) (If `FFlagDebugLocalPluginsElevatedForInternal` is `true` and Internal Permission is enabled)
 - **Identity:** 4
 - **Related Instances:**
-  - [`ScriptDocument`](https://create.roblox.com/docs/reference/engine/classes/ScriptDocument)
-    - Due to [`ScriptDocument.IsCommandBar`](https://create.roblox.com/docs/reference/engine/classes/ScriptDocument#IsCommandBar)
+	- [`ScriptDocument`](https://create.roblox.com/docs/reference/engine/classes/ScriptDocument)
+		- Due to [`ScriptDocument.IsCommandBar`](https://create.roblox.com/docs/reference/engine/classes/ScriptDocument#IsCommandBar)
 
 ## Notes
 - This is the most permissive identity a developer may use on Non-Internal Studio.

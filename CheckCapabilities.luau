@@ -83,27 +83,6 @@ local capInfos = {
 			Instance.new("ModuleScript").Source = ""
 		end)
 	},
-	-- nothing in the engine has Assistant anymore as StreamingService was deleted, not worth to check against anymore
-	--[[{
-		name = "Assistant",
-		index = 62,
-		canAccess = customSuccess(function()
-			local StreamingService = game:GetService("StreamingService")
-
-			if not StreamingService then
-				return false
-			end
-
-			-- this is going to error regardless because noargs, lacking permission takes priority though
-			local _, errMsg = pcall(StreamingService.ExecuteCommandAsync, StreamingService)
-
-			if string.find(errMsg, "current thread cannot") then
-				return false
-			end
-
-			return true
-		end)
-	},]]
 }
 
 local longestNameLength = 0

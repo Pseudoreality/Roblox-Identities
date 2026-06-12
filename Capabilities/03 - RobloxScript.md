@@ -10,11 +10,11 @@ Members with this security are intended for strict internal usage.
 
 ## Notes
 > [!WARNING]
-> Assuming you are someone that has Internal Permissions, either legitimately or illegitimately, you should treat members under this security with caution if you have no idea what you're doing.
+> Assuming you are someone that has Internal Permission, either legitimately or illegitimately, you should treat members under this security with caution if you have no idea what you're doing.
 > Some of these members are harmless, but many are landmines that activate certain actions regarding your account / your device.
 
-- Threads with this security are restricted from using `loadstring()`, regardless of `ServerScriptService.LoadStringEnabled`.
-- The presence or absence of the security dictates what `ModuleScript`s the thread is allowed to use.
-  - For `ModuleScript`s created by DataModelPatches, such as those found in `CoreGui` and `CorePackages`, and BuiltInPlugins, the thread <ins>must have</ins> this security.
-  - For `ModuleScript`s from most other sources, such as those inserted by developers, the thread <ins>must not have</ins> it.
-  - If either condition is not met, `require` throws an error.
+- Threads with this security are restricted from using [`loadstring`](https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#loadstring), regardless of [`ServerScriptService.LoadStringEnabled`](https://create.roblox.com/docs/reference/engine/classes/ServerScriptService#LoadStringEnabled).
+- The presence or absence of the security dictates what [`ModuleScript`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript)s the thread is allowed to use.
+  - For [`ModuleScript`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript)s created by DataModelPatches, such as those found in [`CoreGui`](https://create.roblox.com/docs/reference/engine/classes/CoreGui) and `CorePackages`, and Built-in Plugins, the thread <ins>must have</ins> this security.
+  - For [`ModuleScript`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript)s from most other sources, such as those inserted by developers, the thread <ins>must not have</ins> it.
+  - If either condition is not met, [`require`](https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require) throws an error.

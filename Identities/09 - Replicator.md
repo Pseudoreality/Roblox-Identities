@@ -5,7 +5,7 @@ Used for Luau threads that handle the replication of the game. This is for initi
 
 ## Information
 - **Accessible Capabilities:**
-  - [`WritePlayer`](../Capabilities/02%20-%20WritePlayer.md)
-  - [`RobloxScript`](../Capabilities/03%20-%20RobloxScript.md)
+	- [`WritePlayer`](../Capabilities/02%20-%20WritePlayer.md)
+	- [`RobloxScript`](../Capabilities/03%20-%20RobloxScript.md)
 - **Identity:** 9
 - **InstancesUsed:** N/A

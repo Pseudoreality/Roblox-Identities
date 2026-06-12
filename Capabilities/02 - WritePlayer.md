@@ -21,5 +21,6 @@ This security is used to restrict common [`Player`](https://create.roblox.com/do
 - [`Player.HasVerifiedBadge`](https://create.roblox.com/docs/reference/engine/classes/Player#HasVerifiedBadge)
 - `Player.Name`
 - `Player.name`
+- `Player.PlatformName`, which also needs [`RobloxScript`](03%20-%20RobloxScript.md).
 - [`Player.UserId`](https://create.roblox.com/docs/reference/engine/classes/Player#UserId)
 - `Player.userId`

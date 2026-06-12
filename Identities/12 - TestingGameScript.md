@@ -13,4 +13,4 @@ Used for internal test places. All [`GameScript`](02%20-%20GameScript.md)s will 
 
 ## Notes
 - Added 04/22/25
-- Making every script in a game run at this level can be done by adding its owner's id to `DFStringInternalTestGroupIds`, assuming the game's owner is a group.
+- Making every script in a game run at this specific identity can be done by adding the game owner's id to `DFStringInternalTestGroupIds`, assuming the game's owner is a group.

@@ -1,18 +1,22 @@
 # Intro
-This is my personal documentation on Roblox thread identities and security tags, which are now called security capabilities. This can also contain other information regarding how code under a specific identity is loaded by the engine, among some other little things.
+This is my personal documentation on Roblox thread identities and their capabilities. It also covers where the engine uses the identity when running code, along with any other related details. If there is ever an event where an identity or capability is removed/replaced in the engine, then they should be placed in their dedicated Deprecated folder.
+
+If you want easy ways to test a thread's identity and capabilities:
+- [`printidentity()`](https://create.roblox.com/docs/reference/engine/globals/RobloxGlobals#printidentity) will output the identity.
+- [This script](CheckCapabilities.luau) will probe specific API to print the thread's capabilities.
+
+Keep in mind that depending on the client and version used, identities and their capabilities can be extremely different. Because of that, if anything here needs to be corrected and you want to open an issue/pull request, please use the most up-to-date version of Roblox available to verify information, preferable on production.
 
 > [!WARNING]
-> This does not cover any of the [Script Capabilities](https://create.roblox.com/docs/scripting/capabilities) that can be sandboxed, as they have their own official documentation page! I will only add the sandboxable capabilities here if the official documentation isn't good enough or it becomes outdated. Currently, [`CapabilityControl`](Capabilities/UndocumentedSandboxable/35%20-%20CapabilityControl.md) and [`Players`](Capabilities/UndocumentedSandboxable/34%20-%20Players.md) are undocumented.
-
-If you want to test anything in this repository, you can see the script's identity by calling `printidentity()` in the script. If you want to see the capabilities, you can refer to this repository or you can run the [Luau script provided](CheckCapabilities.luau).
-Of course, depending on how old the client is, identities and their capabilities can be extremely different from other versions of Roblox. So if there comes to be an issue where I made a typo or some information is not correct, please use the most modern version of the client available.
+> This does not cover any of the [Script Capabilities](https://create.roblox.com/docs/scripting/capabilities) that can be sandboxed by developers, as they have their own official documentation page. I will only add the sandboxable capabilities here if the official documentation isn't good enough or it becomes outdated.
 
 # Explanation of Identities and Capabilities
-If you don't exactly know what Identities and Capabilities are, then an explaination is provided here. Every thread on Roblox is assigned an ID, which dictates what the thread is able to access. This system exists to prevent certain scripts from accessing things that can be considered sensitive or only available under specific contexts.
-Properties have a Read and Write security (which most of the time, both will be the exact same), while Functions, Events, and Callbacks only have the one security.
+Every thread is assigned an identity and a set of capabilities, which dictates what it can access. This system exists to prevent certain contexts from accessing things that could be considered sensitive or dangerous. Developers are able to sandbox their own scripts and take away [Script Capabilities](https://create.roblox.com/docs/scripting/capabilities) to limit threads even further to prevent misuse.
 
-A few examples I can provide of Engine APIs being locked down for good reasons with this system:
+Properties are assigned a read and write security, as well as read and write capability lists. Most of the time, the read and write values will share the same value. Functions, Events, and Callbacks are given only one security and one capability list.
+For all members, it is possible for them to not have their capability lists provided to indicate that it doesn't need any capabilities to use it. However, all securities will be present with [`None`](Capabilities/03%20-%20RobloxScript.md) being use to indicate that all threads are allowed to access it.
 
-* `CoreGui.TakeScreenshot` is a very obvious example of a function you don't want everyone to have access to, as it will forcefully take a screenshot. Because of this, Roblox gave this function the [`RobloxScript`](Capabilities/03%20-%20RobloxScript.md) tag, which locks it from anything that cannot access [`RobloxScript`](Capabilities/03%20-%20RobloxScript.md) but allows things like `CoreScript`s to access it.
+### A few examples of locked Engine APIs
+* `CoreGui.TakeScreenshot` forces the client to take a screenshot and save the result to the disk. Obviously, you wouldn't want any game to be able to do this, which is why Roblox assigned [`RobloxScript`](Capabilities/03%20-%20RobloxScript.md) to it. This locks it to trusted contexts, such as `CoreScript`s, whose threads run as [`ElevatedGameScript`](Identities/03%20-%20ElevatedGameScript.md).
 
-* [`HttpService.HttpEnabled`](https://create.roblox.com/docs/reference/engine/classes/HttpService#HttpEnabled) is another kind of sensitive property. Imagine a GameScript/Plugin you inserted into your game happened to be backdoor that serialized all of your game's Instances the second it started and sent it off to a remote server. However, it would be a pain if it was given [`RobloxScript`](Capabilities/03%20-%20RobloxScript.md) because that would lock it away from the command bar. This is most likely why Roblox gave this property [`LocalUser`](Capabilities/01%20-%20LocalUser.md) instead since [`GameScript`](Identities/2%20-%20GameScript.md)s and [`StudioPlugin`](Identities/5%20-%20StudioPlugin.md)s cannot use it, but the [`CommandBar`](Identities/4%20-%20CommandBar.md) can.
+* [`HttpService.HttpEnabled`](https://create.roblox.com/docs/reference/engine/classes/HttpService#HttpEnabled), which allows threads to use [`HttpService`](https://create.roblox.com/docs/reference/engine/classes/HttpService) methods when true. In the event of backdoors and viruses somehow being added to one's game, or a malicious plugin being installed, [`LocalUser`](Capabilities/01%20-%20LocalUser.md) as the write security prevents additional damage from being done, while allowing certain identities such as the [`CommandBar`](Identities/04%20-%20CommandBar.md) for developer convenience.

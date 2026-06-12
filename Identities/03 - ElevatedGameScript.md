@@ -5,13 +5,13 @@ Used for special scripts that are authored by Roblox to run within live games. T
 
 ## Information
 - **Accessible Capabilities:**
-  - [`Plugin`](../Capabilities/00%20-%20Plugin.md)
-  - [`LocalUser`](../Capabilities/01%20-%20LocalUser.md)
-  - [`RobloxScript`](../Capabilities/03%20-%20RobloxScript.md)
-  - [`InternalTest`](../Capabilities/60%20-%20InternalTest.md)
+	- [`Plugin`](../Capabilities/00%20-%20Plugin.md)
+	- [`LocalUser`](../Capabilities/01%20-%20LocalUser.md)
+	- [`RobloxScript`](../Capabilities/03%20-%20RobloxScript.md)
+	- [`InternalTest`](../Capabilities/60%20-%20InternalTest.md)
 - **Identity:** 3
 - **Related Instances:**
-  - `CoreScript`
+	- `CoreScript`
 
 ## Notes
 - Most[^appCoreScriptDisclaimer] `CoreScript` source code can be found in `%localappdata%\Roblox\Versions\{clientUploadVersion}\ExtraContent\scripts\CoreScripts` on Windows, assuming the version used is a Roblox Studio installation.
