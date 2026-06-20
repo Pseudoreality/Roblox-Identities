@@ -22,7 +22,7 @@ For all members, it is possible for them to not have their capability lists prov
 * [`HttpService.HttpEnabled`](https://create.roblox.com/docs/reference/engine/classes/HttpService#HttpEnabled), which allows threads to use [`HttpService`](https://create.roblox.com/docs/reference/engine/classes/HttpService) methods when true. In the event of backdoors and viruses somehow being added to one's game, or a malicious plugin being installed, [`LocalUser`](Capabilities/01%20-%20LocalUser.md) as the write security prevents additional damage from being done, while allowing certain identities such as the [`CommandBar`](Identities/04%20-%20CommandBar.md) for developer convenience.
 
 # Capabilities Table
-This is a table maps capabilities (rows) to identities (columns) for quick reference.
+This is a table that maps capabilities (rows) to identities (columns) for quick reference.
 
 If a capability is marked with a warning sign (⚠️), the identity has conditional access to it. See the identity's page for details.
 
