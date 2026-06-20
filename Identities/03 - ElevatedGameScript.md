@@ -9,6 +9,7 @@ Used for special scripts that are authored by Roblox to run within live games. T
 	- [`LocalUser`](../Capabilities/01%20-%20LocalUser.md)
 	- [`RobloxScript`](../Capabilities/03%20-%20RobloxScript.md)
 	- [`InternalTest`](../Capabilities/60%20-%20InternalTest.md)
+	- [`PluginOrOpenCloud`](../Capabilities/61%20-%20PluginOrOpenCloud.md)
 - **Identity:** 3
 - **Related Instances:**
 	- `CoreScript`

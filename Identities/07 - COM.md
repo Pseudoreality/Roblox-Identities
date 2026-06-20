@@ -11,6 +11,7 @@ Used by the `DataModelLoader`, if the [`DataModel`](https://create.roblox.com/do
 	- [`RobloxScript`](../Capabilities/03%20-%20RobloxScript.md)
 	- [`RobloxEngine`](../Capabilities/04%20-%20RobloxEngine.md)
 	- [`NotAccessible`](../Capabilities/05%20-%20NotAccessible.md)
+	- [`PluginOrOpenCloud`](../Capabilities/61%20-%20PluginOrOpenCloud.md)
 - **Identity:** 7
 - **Related Instances:** N/A
 

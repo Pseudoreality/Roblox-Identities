@@ -12,8 +12,9 @@ Used by a few different contexts:
 	- [`Plugin`](../Capabilities/00%20-%20Plugin.md)
 	- [`LocalUser`](../Capabilities/01%20-%20LocalUser.md)
 	- [`RobloxScript`](../Capabilities/03%20-%20RobloxScript.md)
-	- [`Assistant`](../Capabilities/62%20-%20Assistant.md)
 	- [`InternalTest`](../Capabilities/60%20-%20InternalTest.md)
+	- [`PluginOrOpenCloud`](../Capabilities/61%20-%20PluginOrOpenCloud.md)
+	- [`Assistant`](../Capabilities/62%20-%20Assistant.md)
 - **Identity:** 6
 - **Related Instances:**
 	- [`Plugin`](https://create.roblox.com/docs/reference/engine/classes/Plugin)

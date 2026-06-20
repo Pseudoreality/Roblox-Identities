@@ -5,9 +5,10 @@ Used by the AI Assistant when it runs code.
 
 ## Information
 - **Accessible Capabilities:**
-	- [`Assistant`](../Capabilities/62%20-%20Assistant.md)
 	- [`Plugin`](../Capabilities/00%20-%20Plugin.md)
 	- [`LocalUser`](../Capabilities/01%20-%20LocalUser.md)
+	- [`PluginOrOpenCloud`](../Capabilities/61%20-%20PluginOrOpenCloud.md)
+	- [`Assistant`](../Capabilities/62%20-%20Assistant.md)
 - **Identity:** 10
 - **Related Instances:** N/A
 

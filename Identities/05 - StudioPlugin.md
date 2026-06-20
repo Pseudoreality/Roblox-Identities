@@ -7,6 +7,7 @@ Used for custom add-ons made by developers.
 - **Accessible Capabilities:**
 	- [`Plugin`](../Capabilities/00%20-%20Plugin.md)
 	- [`InternalTest`](../Capabilities/60%20-%20InternalTest.md) (If `FFlagDebugLocalPluginsElevatedForInternal` is `true` and Internal Permission is enabled)
+	- [`PluginOrOpenCloud`](../Capabilities/61%20-%20PluginOrOpenCloud.md)
 - **Identity:** 5
 - **Related Instances:**
 	- [`Plugin`](https://create.roblox.com/docs/reference/engine/classes/Plugin)

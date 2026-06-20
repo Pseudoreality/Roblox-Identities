@@ -20,3 +20,21 @@ For all members, it is possible for them to not have their capability lists prov
 * `CoreGui.TakeScreenshot` forces the client to take a screenshot and save the result to the disk. Obviously, you wouldn't want any game to be able to do this, which is why Roblox assigned [`RobloxScript`](Capabilities/03%20-%20RobloxScript.md) to it. This locks it to trusted contexts, such as `CoreScript`s, whose threads run as [`ElevatedGameScript`](Identities/03%20-%20ElevatedGameScript.md).
 
 * [`HttpService.HttpEnabled`](https://create.roblox.com/docs/reference/engine/classes/HttpService#HttpEnabled), which allows threads to use [`HttpService`](https://create.roblox.com/docs/reference/engine/classes/HttpService) methods when true. In the event of backdoors and viruses somehow being added to one's game, or a malicious plugin being installed, [`LocalUser`](Capabilities/01%20-%20LocalUser.md) as the write security prevents additional damage from being done, while allowing certain identities such as the [`CommandBar`](Identities/04%20-%20CommandBar.md) for developer convenience.
+
+# Capabilities Table
+This is a table maps capabilities (rows) to identities (columns) for quick reference.
+
+If a capability is marked with a warning sign (⚠️), the identity has conditional access to it. See the identity's page for details.
+
+|| [LocalGui](Identities/01%20-%20LocalGui.md) | [GameScript](Identities/02%20-%20GameScript.md) | [ElevatedGameScript](Identities/03%20-%20ElevatedGameScript.md) | [CommandBar](Identities/04%20-%20CommandBar.md) | [StudioPlugin](Identities/05%20-%20StudioPlugin.md) | [ElevatedStudioPlugin](Identities/06%20-%20ElevatedStudioPlugin.md) | [COM](Identities/07%20-%20COM.md) | [WebService](Identities/08%20-%20WebService.md) | [Replicator](Identities/09%20-%20Replicator.md) | [Assistant](Identities/10%20-%20Assistant.md) | [OpenCloudSession](Identities/11%20-%20OpenCloudSession.md) | [TestingGameScript](Identities/12%20-%20TestingGameScript.md) | [UndoStack](Identities/13%20-%20UndoStack.md)
+| ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [**Plugin**](Capabilities/00%20-%20Plugin.md) | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| [**LocalUser**](Capabilities/01%20-%20LocalUser.md) | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| [**WritePlayer**](Capabilities/02%20-%20WritePlayer.md) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| [**RobloxScript**](Capabilities/03%20-%20RobloxScript.md) | ❌ | ❌ | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| [**RobloxEngine**](Capabilities/04%20-%20RobloxEngine.md) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [**NotAccessible**](Capabilities/05%20-%20NotAccessible.md) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [**RemoteCommand**](Capabilities/59%20-%20RemoteCommand.md) | ❌ | ⚠️ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [**InternalTest**](Capabilities/60%20-%20InternalTest.md) | ❌ | ⚠️ | ✅ | ⚠️ | ⚠️ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
+| [**PluginOrOpenCloud**](Capabilities/61%20-%20PluginOrOpenCloud.md) | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ |
+| [**Assistant**](Capabilities/62%20-%20Assistant.md) | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |

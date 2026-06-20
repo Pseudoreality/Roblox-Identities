@@ -23,8 +23,8 @@ Used by a few different contexts:
 
 ## Information
 - **Accessible Capabilities:**
-	- [`InternalTest`](../Capabilities/60%20-%20InternalTest.md) (If `FFlagDebugLocalPluginsElevatedForInternal` is `true` and Internal Permission is enabled)
 	- [`RemoteCommand`](../Capabilities/59%20-%20RemoteCommand.md) (If executed via `RemoteCommandService` or `ExecutedRemoteCommand:RunMoreCode()`)
+	- [`InternalTest`](../Capabilities/60%20-%20InternalTest.md) (If `FFlagDebugLocalPluginsElevatedForInternal` is `true` and Internal Permission is enabled)
 - **Identity:** 2
 - **Related Instances:**
 	- [`Script`](https://create.roblox.com/docs/reference/engine/classes/Script)
