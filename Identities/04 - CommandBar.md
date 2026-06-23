@@ -1,7 +1,10 @@
 # CommandBar
 
 ## Description
-Used for the Command Bar, a debugging tool for developers. `CommandBar` is also used for the **Window** > **Script** > **Run Script** action.
+Used in a few different contexts:
+- [Command Bar UI](https://create.roblox.com/docs/studio/ui-overview#command-bar)
+- Run Script action, **Window** > **Script** > **Run Script**
+- [`RunScript` CLI tasks](https://create.roblox.com/docs/studio/command-line-interface#run-a-script)
 
 ## Information
 - **Accessible Capabilities:**
