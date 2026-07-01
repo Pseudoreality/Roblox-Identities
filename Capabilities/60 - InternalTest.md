@@ -9,7 +9,7 @@ Members with this capability are intended for strict internal usage, usually for
 ## Notes
 - Added 04/22/25
 
-## Assigned API, as of v721
+## Assigned API, as of v728
 * [`CustomLog`](https://create.roblox.com/docs/reference/engine/classes/CustomLog)
 * [`RealtimeMedia`](https://create.roblox.com/docs/reference/engine/classes/RealtimeMedia)
 * [`AnalyticsService`](https://create.roblox.com/docs/reference/engine/classes/AnalyticsService) Members:
@@ -46,11 +46,19 @@ Members with this capability are intended for strict internal usage, usually for
 	* [`Stats.SetHarmonyMemoryTarget`](https://create.roblox.com/docs/reference/engine/classes/Stats#SetHarmonyMemoryTarget)
 * [`TestService`](https://create.roblox.com/docs/reference/engine/classes/TestService) Members:
 	* [`TestService.CaptureScreenshotAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#CaptureScreenshotAsync)
+	* [`TestService.GetTestControlSchema`](https://create.roblox.com/docs/reference/engine/classes/TestService#GetTestControlSchema)
+	* [`TestService.GetTestControls`](https://create.roblox.com/docs/reference/engine/classes/TestService#GetTestControls)
 	* [`TestService.RequestValidationAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#RequestValidationAsync)
+	* [`TestService.ResetTestControl`](https://create.roblox.com/docs/reference/engine/classes/TestService#ResetTestControl)
+	* [`TestService.SetTestControl`](https://create.roblox.com/docs/reference/engine/classes/TestService#SetTestControl)
 	* [`TestService.StartTestSession`](https://create.roblox.com/docs/reference/engine/classes/TestService#StartTestSession)
+	* [`TestService.StartVideoCaptureAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#StartVideoCaptureAsync)
 	* [`TestService.StopTestSession`](https://create.roblox.com/docs/reference/engine/classes/TestService#StopTestSession)
+	* [`TestService.StopVideoCaptureAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#StopVideoCaptureAsync)
 	* [`TestService.getTestSessionProviderStats`](https://create.roblox.com/docs/reference/engine/classes/TestService#getTestSessionProviderStats)
 * [`VideoFrame`](https://create.roblox.com/docs/reference/engine/classes/VideoFrame) Members:
+	* [`VideoFrame.InternalVideoUsage`](https://create.roblox.com/docs/reference/engine/classes/VideoFrame#InternalVideoUsage) (also requires [`Audio`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control), [`UI`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 	* [`VideoFrame.MaximumResolution`](https://create.roblox.com/docs/reference/engine/classes/VideoFrame#MaximumResolution) (also requires [`Audio`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control), [`UI`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 * [`VideoPlayer`](https://create.roblox.com/docs/reference/engine/classes/VideoPlayer) Members:
+	* [`VideoPlayer.InternalVideoUsage`](https://create.roblox.com/docs/reference/engine/classes/VideoPlayer#InternalVideoUsage) (also requires [`Audio`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control), [`UI`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 	* [`VideoPlayer.MaximumResolution`](https://create.roblox.com/docs/reference/engine/classes/VideoPlayer#MaximumResolution) (also requires [`Audio`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control), [`UI`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
