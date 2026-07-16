@@ -9,7 +9,7 @@ Members with this capability are intended for strict internal usage, usually for
 ## Notes
 - Added 04/22/25
 
-## Assigned API, as of v728
+## Assigned API, as of v730
 * [`CustomLog`](https://create.roblox.com/docs/reference/engine/classes/CustomLog)
 * [`RealtimeMedia`](https://create.roblox.com/docs/reference/engine/classes/RealtimeMedia)
 * [`AnalyticsService`](https://create.roblox.com/docs/reference/engine/classes/AnalyticsService) Members:
@@ -44,10 +44,16 @@ Members with this capability are intended for strict internal usage, usually for
 	* [`Stats.GetMemoryUsageMbAllCategories`](https://create.roblox.com/docs/reference/engine/classes/Stats#GetMemoryUsageMbAllCategories)
 	* [`Stats.ResetHarmonyMemoryTarget`](https://create.roblox.com/docs/reference/engine/classes/Stats#ResetHarmonyMemoryTarget)
 	* [`Stats.SetHarmonyMemoryTarget`](https://create.roblox.com/docs/reference/engine/classes/Stats#SetHarmonyMemoryTarget)
+* [`TestCase`](https://create.roblox.com/docs/reference/engine/classes/TestCase) Members:
+	* [`TestCase.Assert`](https://create.roblox.com/docs/reference/engine/classes/TestCase#Assert)
+	* [`TestCase.EndTest`](https://create.roblox.com/docs/reference/engine/classes/TestCase#EndTest)
+	* [`TestCase.Message`](https://create.roblox.com/docs/reference/engine/classes/TestCase#Message)
+	* [`TestCase.Require`](https://create.roblox.com/docs/reference/engine/classes/TestCase#Require)
 * [`TestService`](https://create.roblox.com/docs/reference/engine/classes/TestService) Members:
 	* [`TestService.CaptureScreenshotAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#CaptureScreenshotAsync)
 	* [`TestService.GetTestControlSchema`](https://create.roblox.com/docs/reference/engine/classes/TestService#GetTestControlSchema)
 	* [`TestService.GetTestControls`](https://create.roblox.com/docs/reference/engine/classes/TestService#GetTestControls)
+	* [`TestService.RegisterTest`](https://create.roblox.com/docs/reference/engine/classes/TestService#RegisterTest)
 	* [`TestService.RequestValidationAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#RequestValidationAsync)
 	* [`TestService.ResetTestControl`](https://create.roblox.com/docs/reference/engine/classes/TestService#ResetTestControl)
 	* [`TestService.SetTestControl`](https://create.roblox.com/docs/reference/engine/classes/TestService#SetTestControl)
@@ -55,6 +61,7 @@ Members with this capability are intended for strict internal usage, usually for
 	* [`TestService.StartVideoCaptureAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#StartVideoCaptureAsync)
 	* [`TestService.StopTestSession`](https://create.roblox.com/docs/reference/engine/classes/TestService#StopTestSession)
 	* [`TestService.StopVideoCaptureAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#StopVideoCaptureAsync)
+	* [`TestService.TakeSnapshot`](https://create.roblox.com/docs/reference/engine/classes/TestService#TakeSnapshot)
 	* [`TestService.getTestSessionProviderStats`](https://create.roblox.com/docs/reference/engine/classes/TestService#getTestSessionProviderStats)
 * [`VideoFrame`](https://create.roblox.com/docs/reference/engine/classes/VideoFrame) Members:
 	* [`VideoFrame.InternalVideoUsage`](https://create.roblox.com/docs/reference/engine/classes/VideoFrame#InternalVideoUsage) (also requires [`Audio`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control), [`UI`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
