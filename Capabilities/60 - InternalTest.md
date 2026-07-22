@@ -9,7 +9,7 @@ Members with this capability are intended for strict internal usage, usually for
 ## Notes
 - Added 04/22/25
 
-## Assigned API, as of v730
+## Assigned API, as of v731
 * [`CustomLog`](https://create.roblox.com/docs/reference/engine/classes/CustomLog)
 * [`RealtimeMedia`](https://create.roblox.com/docs/reference/engine/classes/RealtimeMedia)
 * [`AnalyticsService`](https://create.roblox.com/docs/reference/engine/classes/AnalyticsService) Members:
@@ -46,14 +46,17 @@ Members with this capability are intended for strict internal usage, usually for
 	* [`Stats.SetHarmonyMemoryTarget`](https://create.roblox.com/docs/reference/engine/classes/Stats#SetHarmonyMemoryTarget)
 * [`TestCase`](https://create.roblox.com/docs/reference/engine/classes/TestCase) Members:
 	* [`TestCase.Assert`](https://create.roblox.com/docs/reference/engine/classes/TestCase#Assert)
+	* [`TestCase.AssertLegacy`](https://create.roblox.com/docs/reference/engine/classes/TestCase#AssertLegacy)
 	* [`TestCase.EndTest`](https://create.roblox.com/docs/reference/engine/classes/TestCase#EndTest)
 	* [`TestCase.Message`](https://create.roblox.com/docs/reference/engine/classes/TestCase#Message)
 	* [`TestCase.Require`](https://create.roblox.com/docs/reference/engine/classes/TestCase#Require)
+	* [`TestCase.RequireLegacy`](https://create.roblox.com/docs/reference/engine/classes/TestCase#RequireLegacy)
 * [`TestService`](https://create.roblox.com/docs/reference/engine/classes/TestService) Members:
 	* [`TestService.CaptureScreenshotAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#CaptureScreenshotAsync)
 	* [`TestService.GetTestControlSchema`](https://create.roblox.com/docs/reference/engine/classes/TestService#GetTestControlSchema)
 	* [`TestService.GetTestControls`](https://create.roblox.com/docs/reference/engine/classes/TestService#GetTestControls)
 	* [`TestService.RegisterTest`](https://create.roblox.com/docs/reference/engine/classes/TestService#RegisterTest)
+	* [`TestService.RegisterTestLegacy`](https://create.roblox.com/docs/reference/engine/classes/TestService#RegisterTestLegacy)
 	* [`TestService.RequestValidationAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#RequestValidationAsync)
 	* [`TestService.ResetTestControl`](https://create.roblox.com/docs/reference/engine/classes/TestService#ResetTestControl)
 	* [`TestService.SetTestControl`](https://create.roblox.com/docs/reference/engine/classes/TestService#SetTestControl)
