@@ -9,7 +9,7 @@ Members with this capability are intended for strict internal usage, usually for
 ## Notes
 - Added 04/22/25
 
-## Assigned API, as of v731
+## Assigned API, as of v732
 * [`CustomLog`](https://create.roblox.com/docs/reference/engine/classes/CustomLog)
 * [`RealtimeMedia`](https://create.roblox.com/docs/reference/engine/classes/RealtimeMedia)
 * [`AnalyticsService`](https://create.roblox.com/docs/reference/engine/classes/AnalyticsService) Members:
@@ -53,6 +53,7 @@ Members with this capability are intended for strict internal usage, usually for
 	* [`TestCase.RequireLegacy`](https://create.roblox.com/docs/reference/engine/classes/TestCase#RequireLegacy)
 * [`TestService`](https://create.roblox.com/docs/reference/engine/classes/TestService) Members:
 	* [`TestService.CaptureScreenshotAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#CaptureScreenshotAsync)
+	* [`TestService.FetchTestControlsAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#FetchTestControlsAsync)
 	* [`TestService.GetTestControlSchema`](https://create.roblox.com/docs/reference/engine/classes/TestService#GetTestControlSchema)
 	* [`TestService.GetTestControls`](https://create.roblox.com/docs/reference/engine/classes/TestService#GetTestControls)
 	* [`TestService.RegisterTest`](https://create.roblox.com/docs/reference/engine/classes/TestService#RegisterTest)
