@@ -16,6 +16,11 @@ Every thread is assigned an identity and a set of capabilities, which dictates w
 Properties are assigned a read and write security, as well as read and write capability lists. Most of the time, the read and write values will share the same value. Functions, Events, and Callbacks are given only one security and one capability list.
 For all members, it is possible for them to not have their capability lists provided to indicate that it doesn't need any capabilities to use it. However, all securities will be present with [`None`](Capabilities/03%20-%20RobloxScript.md) being use to indicate that all threads are allowed to access it.
 
+Certain capabilities also dictates which Luau Virtual Machine to run the thread on. I am not sure what the official names of each VM is called so for now I'll refer to them as Game, Studio, and Core to make things easier. Please help me by opening an issue if the official names are found anywhere.
+* If a thread has [`RobloxScript`](Capabilities/03%20-%20RobloxScript.md), then it uses the Core VM.
+* If it has [`Plugin`](Capabilities/00%20-%20Plugin.md) and not [`RobloxScript`](Capabilities/03%20-%20RobloxScript.md), then it uses the Studio VM.
+* If it has neither, then it will use the Game VM.
+
 ### A few examples of locked Engine APIs
 * `CoreGui.TakeScreenshot` forces the client to take a screenshot and save the result to the disk. Obviously, you wouldn't want any game to be able to do this, which is why Roblox assigned [`RobloxScript`](Capabilities/03%20-%20RobloxScript.md) to it. This locks it to trusted contexts, such as `CoreScript`s, whose threads run as [`ElevatedGameScript`](Identities/03%20-%20ElevatedGameScript.md).
 

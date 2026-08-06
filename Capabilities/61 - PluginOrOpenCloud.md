@@ -7,8 +7,15 @@ Members with this security are intended to be used by [`LuauExecutionSessionTask
 - **Security Name:** OpenCloud Security
 - **Index:** 61
 
-## Assigned API, as of v719
+## Assigned API, as of v733
+* [`DataModelDiff`](https://create.roblox.com/docs/reference/engine/classes/DataModelDiff)
 * [`SerializationService`](https://create.roblox.com/docs/reference/engine/classes/SerializationService)
+* [`AuroraScript`](https://create.roblox.com/docs/reference/engine/classes/AuroraScript) Members:
+	* [`AuroraScript.EnableCulling`](https://create.roblox.com/docs/reference/engine/classes/AuroraScript#EnableCulling) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
+	* [`AuroraScript.EnableLOD`](https://create.roblox.com/docs/reference/engine/classes/AuroraScript#EnableLOD) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
+	* [`AuroraScript.LODCriticality`](https://create.roblox.com/docs/reference/engine/classes/AuroraScript#LODCriticality) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
+	* [`AuroraScript.Priority`](https://create.roblox.com/docs/reference/engine/classes/AuroraScript#Priority) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
+	* [`AuroraScript.Source`](https://create.roblox.com/docs/reference/engine/classes/AuroraScript#Source) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 * [`ModuleScript`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript) Members:
 	* [`ModuleScript.Source`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript#Source)
 * [`RunService`](https://create.roblox.com/docs/reference/engine/classes/RunService) Members:
