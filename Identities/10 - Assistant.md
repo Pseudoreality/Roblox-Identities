@@ -22,3 +22,4 @@ Used by the AI Assistant when it runs code.
 			2. For **Script Identity** specifically, it calls `AssistantApplication:SetUserSettingsAsync(string, any)` with `"UseElevatedCapabilities"` and a boolean. This saves the setting to `%localappdata%\Roblox\AssistantSettings\{authenticatedUserId}.json`.
 			3. When the Assistant plugin (re)loads, it will read from this file by `AssistantApplication:GetUserSettingsAsync(string): any` with `"UseElevatedCapabilities"`.
 			4. Using the result from above, it will call `SetUseElevatedAssistantAsync`.
+* If `FFlagAssistantCapsRestrictDataStore` is `true`, then all bound code run from `AssistantBridge` loses `DataStore`, `LoadUnownedAsset`, `Network`, and `ScriptGlobals` sandboxable capabilities, regardless of identity.
