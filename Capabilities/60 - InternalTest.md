@@ -9,7 +9,7 @@ Members with this capability are intended for strict internal usage, usually for
 ## Notes
 - Added 04/22/25
 
-## Assigned API, as of v732
+## Assigned API, as of v736
 * [`CustomLog`](https://create.roblox.com/docs/reference/engine/classes/CustomLog)
 * [`RealtimeMedia`](https://create.roblox.com/docs/reference/engine/classes/RealtimeMedia)
 * [`AnalyticsService`](https://create.roblox.com/docs/reference/engine/classes/AnalyticsService) Members:
@@ -61,6 +61,9 @@ Members with this capability are intended for strict internal usage, usually for
 	* [`TestService.RequestValidationAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#RequestValidationAsync)
 	* [`TestService.ResetTestControl`](https://create.roblox.com/docs/reference/engine/classes/TestService#ResetTestControl)
 	* [`TestService.SetTestControl`](https://create.roblox.com/docs/reference/engine/classes/TestService#SetTestControl)
+	* [`TestService.SignalProfilingCapture`](https://create.roblox.com/docs/reference/engine/classes/TestService#SignalProfilingCapture)
+	* [`TestService.SignalProfilingStart`](https://create.roblox.com/docs/reference/engine/classes/TestService#SignalProfilingStart)
+	* [`TestService.SignalProfilingStop`](https://create.roblox.com/docs/reference/engine/classes/TestService#SignalProfilingStop)
 	* [`TestService.StartTestSession`](https://create.roblox.com/docs/reference/engine/classes/TestService#StartTestSession)
 	* [`TestService.StartVideoCaptureAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#StartVideoCaptureAsync)
 	* [`TestService.StopTestSession`](https://create.roblox.com/docs/reference/engine/classes/TestService#StopTestSession)

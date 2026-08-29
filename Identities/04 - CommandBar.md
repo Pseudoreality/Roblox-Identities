@@ -22,3 +22,4 @@ Used in a few different contexts:
 - On the topic of the Command Bar itself, because of `ScriptDocument`s, the Command Bar is represented by one. This means that any Plugin is capable of reading anything written to the Command Bar.
 - On Internal Studio, the Command Bar may also have its identity changed to either [`GameScript`](02%20-%20GameScript.md), `CommandBar`, or [`ElevatedStudioPlugin`](06%20-%20ElevatedStudioPlugin.md) as showed below. ![](https://i.imgur.com/e2KqirW.png)
 - [`debug.dumpcodesize()`](https://create.roblox.com/docs/reference/engine/libraries/debug#dumpcodesize), `debug.dumpheap()`, and `debug.dumprefs()` strictly require the calling thread to be `CommandBar` to be called.
+- `require` strictly requires the calling thread to be [`Assistant`](10%20-%20Assistant.md) or `CommandBar` to use [`@rbx/LibMP`](https://github.com/Roblox/libmp).

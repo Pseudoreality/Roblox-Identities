@@ -11,4 +11,4 @@ Used for Luau threads that handle the Undo/Redo actions on Studio.
 - **InstancesUsed:** N/A
 
 ## Notes
-* Added 03/26/26
+- Added 03/26/26
