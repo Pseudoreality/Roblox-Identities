@@ -9,7 +9,7 @@ Members with this capability are intended for strict internal usage, usually for
 ## Notes
 - Added 04/22/25
 
-## Assigned API, as of v736
+## Assigned API, as of v737
 * [`CustomLog`](https://create.roblox.com/docs/reference/engine/classes/CustomLog)
 * [`RealtimeMedia`](https://create.roblox.com/docs/reference/engine/classes/RealtimeMedia)
 * [`AnalyticsService`](https://create.roblox.com/docs/reference/engine/classes/AnalyticsService) Members:
@@ -27,7 +27,7 @@ Members with this capability are intended for strict internal usage, usually for
 	* [`GenerationService.UpdateVideoGenSessionPromptAsync`](https://create.roblox.com/docs/reference/engine/classes/GenerationService#UpdateVideoGenSessionPromptAsync) (also requires [`DynamicGeneration`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 	* [`GenerationService.UpdateVideoGenSessionTriggersAsync`](https://create.roblox.com/docs/reference/engine/classes/GenerationService#UpdateVideoGenSessionTriggersAsync) (also requires [`DynamicGeneration`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 * [`GeometryService`](https://create.roblox.com/docs/reference/engine/classes/GeometryService) Members:
-	* [`GeometryService.CreateSolidPrimitive`](https://create.roblox.com/docs/reference/engine/classes/GeometryService#CreateSolidPrimitive) (also requires [`CSG`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
+	* [`GeometryService.CreateBasicMeshPart`](https://create.roblox.com/docs/reference/engine/classes/GeometryService#CreateBasicMeshPart) (also requires [`CSG`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 * [`MLService`](https://create.roblox.com/docs/reference/engine/classes/MLService) Members:
 	* [`MLService.IsPostProcessReady`](https://create.roblox.com/docs/reference/engine/classes/MLService#IsPostProcessReady) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 	* [`MLService.LoadPostProcessModelAsync`](https://create.roblox.com/docs/reference/engine/classes/MLService#LoadPostProcessModelAsync) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
