@@ -7,7 +7,7 @@ Members with this security are intended to be used by [`LuauExecutionSessionTask
 - **Security Name:** OpenCloud Security
 - **Index:** 61
 
-## Assigned API, as of v733
+## Assigned API, as of v738
 * [`DataModelDiff`](https://create.roblox.com/docs/reference/engine/classes/DataModelDiff)
 * [`SerializationService`](https://create.roblox.com/docs/reference/engine/classes/SerializationService)
 * [`AuroraScript`](https://create.roblox.com/docs/reference/engine/classes/AuroraScript) Members:
@@ -25,3 +25,5 @@ Members with this security are intended to be used by [`LuauExecutionSessionTask
 * [`ScriptContext`](https://create.roblox.com/docs/reference/engine/classes/ScriptContext) Members:
 	* [`ScriptContext.EnableCoverage`](https://create.roblox.com/docs/reference/engine/classes/ScriptContext#EnableCoverage)
 	* [`ScriptContext.GetCoverageStats`](https://create.roblox.com/docs/reference/engine/classes/ScriptContext#GetCoverageStats)
+* [`Workspace`](https://create.roblox.com/docs/reference/engine/classes/Workspace) Members:
+	* [`Workspace.StreamingAdaptiveRadius`](https://create.roblox.com/docs/reference/engine/classes/Workspace#StreamingAdaptiveRadius)
