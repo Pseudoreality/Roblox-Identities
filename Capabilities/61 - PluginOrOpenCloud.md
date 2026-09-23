@@ -7,7 +7,7 @@ Members with this security are intended to be used by [`LuauExecutionSessionTask
 - **Security Name:** OpenCloud Security
 - **Index:** 61
 
-## Assigned API, as of v738
+## Assigned API, as of v740
 * [`DataModelDiff`](https://create.roblox.com/docs/reference/engine/classes/DataModelDiff)
 * [`SerializationService`](https://create.roblox.com/docs/reference/engine/classes/SerializationService)
 * [`AuroraScript`](https://create.roblox.com/docs/reference/engine/classes/AuroraScript) Members:
@@ -16,8 +16,16 @@ Members with this security are intended to be used by [`LuauExecutionSessionTask
 	* [`AuroraScript.LODCriticality`](https://create.roblox.com/docs/reference/engine/classes/AuroraScript#LODCriticality) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 	* [`AuroraScript.Priority`](https://create.roblox.com/docs/reference/engine/classes/AuroraScript#Priority) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 	* [`AuroraScript.Source`](https://create.roblox.com/docs/reference/engine/classes/AuroraScript#Source) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
+* [`ChatWindowConfiguration`](https://create.roblox.com/docs/reference/engine/classes/ChatWindowConfiguration) Members:
+	* [`ChatWindowConfiguration.TextChannelDisplayMode`](https://create.roblox.com/docs/reference/engine/classes/ChatWindowConfiguration#TextChannelDisplayMode) (also requires [`Chat`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
+* [`Lighting`](https://create.roblox.com/docs/reference/engine/classes/Lighting) Members:
+	* [`Lighting.LightingStyle`](https://create.roblox.com/docs/reference/engine/classes/Lighting#LightingStyle) (also requires [`Environment`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
+	* [`Lighting.PrioritizeLightingQuality`](https://create.roblox.com/docs/reference/engine/classes/Lighting#PrioritizeLightingQuality) (also requires [`Environment`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 * [`ModuleScript`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript) Members:
 	* [`ModuleScript.Source`](https://create.roblox.com/docs/reference/engine/classes/ModuleScript#Source)
+* [`PartOperation`](https://create.roblox.com/docs/reference/engine/classes/PartOperation) Members:
+	* [`PartOperation.RenderFidelity`](https://create.roblox.com/docs/reference/engine/classes/PartOperation#RenderFidelity) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control), [`CSG`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
+	* [`PartOperation.SmoothingAngle`](https://create.roblox.com/docs/reference/engine/classes/PartOperation#SmoothingAngle) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control), [`CSG`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 * [`RunService`](https://create.roblox.com/docs/reference/engine/classes/RunService) Members:
 	* [`RunService.Misprediction`](https://create.roblox.com/docs/reference/engine/classes/RunService#Misprediction) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 * [`Script`](https://create.roblox.com/docs/reference/engine/classes/Script) Members:
@@ -25,5 +33,8 @@ Members with this security are intended to be used by [`LuauExecutionSessionTask
 * [`ScriptContext`](https://create.roblox.com/docs/reference/engine/classes/ScriptContext) Members:
 	* [`ScriptContext.EnableCoverage`](https://create.roblox.com/docs/reference/engine/classes/ScriptContext#EnableCoverage)
 	* [`ScriptContext.GetCoverageStats`](https://create.roblox.com/docs/reference/engine/classes/ScriptContext#GetCoverageStats)
+* [`TriangleMeshPart`](https://create.roblox.com/docs/reference/engine/classes/TriangleMeshPart) Members:
+	* [`TriangleMeshPart.CollisionFidelity`](https://create.roblox.com/docs/reference/engine/classes/TriangleMeshPart#CollisionFidelity) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
+	* [`TriangleMeshPart.FluidFidelity`](https://create.roblox.com/docs/reference/engine/classes/TriangleMeshPart#FluidFidelity) (also requires [`Basic`](https://create.roblox.com/docs/scripting/capabilities#engine-api-access-control))
 * [`Workspace`](https://create.roblox.com/docs/reference/engine/classes/Workspace) Members:
 	* [`Workspace.StreamingAdaptiveRadius`](https://create.roblox.com/docs/reference/engine/classes/Workspace#StreamingAdaptiveRadius)
