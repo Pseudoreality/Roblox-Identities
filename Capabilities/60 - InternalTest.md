@@ -9,7 +9,7 @@ Members with this capability are intended for strict internal usage, usually for
 ## Notes
 - Added 04/22/25
 
-## Assigned API, as of v737
+## Assigned API, as of v742
 * [`CustomLog`](https://create.roblox.com/docs/reference/engine/classes/CustomLog)
 * [`RealtimeMedia`](https://create.roblox.com/docs/reference/engine/classes/RealtimeMedia)
 * [`AnalyticsService`](https://create.roblox.com/docs/reference/engine/classes/AnalyticsService) Members:
@@ -42,6 +42,8 @@ Members with this capability are intended for strict internal usage, usually for
 	* [`Stats.GetHarmonyQualityLevel`](https://create.roblox.com/docs/reference/engine/classes/Stats#GetHarmonyQualityLevel)
 	* [`Stats.GetMemoryCategoryNames`](https://create.roblox.com/docs/reference/engine/classes/Stats#GetMemoryCategoryNames)
 	* [`Stats.GetMemoryUsageMbAllCategories`](https://create.roblox.com/docs/reference/engine/classes/Stats#GetMemoryUsageMbAllCategories)
+	* [`Stats.GetMemoryUsageMbAllCategoriesFiltered`](https://create.roblox.com/docs/reference/engine/classes/Stats#GetMemoryUsageMbAllCategoriesFiltered)
+	* [`Stats.GetMemoryUsageMbFiltered`](https://create.roblox.com/docs/reference/engine/classes/Stats#GetMemoryUsageMbFiltered)
 	* [`Stats.ResetHarmonyMemoryTarget`](https://create.roblox.com/docs/reference/engine/classes/Stats#ResetHarmonyMemoryTarget)
 	* [`Stats.SetHarmonyMemoryTarget`](https://create.roblox.com/docs/reference/engine/classes/Stats#SetHarmonyMemoryTarget)
 * [`TestCase`](https://create.roblox.com/docs/reference/engine/classes/TestCase) Members:
@@ -56,7 +58,6 @@ Members with this capability are intended for strict internal usage, usually for
 	* [`TestService.FetchTestControlsAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#FetchTestControlsAsync)
 	* [`TestService.GetTestControlSchema`](https://create.roblox.com/docs/reference/engine/classes/TestService#GetTestControlSchema)
 	* [`TestService.GetTestControls`](https://create.roblox.com/docs/reference/engine/classes/TestService#GetTestControls)
-	* [`TestService.RegisterTest`](https://create.roblox.com/docs/reference/engine/classes/TestService#RegisterTest)
 	* [`TestService.RegisterTestLegacy`](https://create.roblox.com/docs/reference/engine/classes/TestService#RegisterTestLegacy)
 	* [`TestService.RequestValidationAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#RequestValidationAsync)
 	* [`TestService.ResetTestControl`](https://create.roblox.com/docs/reference/engine/classes/TestService#ResetTestControl)
@@ -64,8 +65,10 @@ Members with this capability are intended for strict internal usage, usually for
 	* [`TestService.SignalProfilingCapture`](https://create.roblox.com/docs/reference/engine/classes/TestService#SignalProfilingCapture)
 	* [`TestService.SignalProfilingStart`](https://create.roblox.com/docs/reference/engine/classes/TestService#SignalProfilingStart)
 	* [`TestService.SignalProfilingStop`](https://create.roblox.com/docs/reference/engine/classes/TestService#SignalProfilingStop)
+	* [`TestService.StartAudioCaptureAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#StartAudioCaptureAsync)
 	* [`TestService.StartTestSession`](https://create.roblox.com/docs/reference/engine/classes/TestService#StartTestSession)
 	* [`TestService.StartVideoCaptureAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#StartVideoCaptureAsync)
+	* [`TestService.StopAudioCaptureAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#StopAudioCaptureAsync)
 	* [`TestService.StopTestSession`](https://create.roblox.com/docs/reference/engine/classes/TestService#StopTestSession)
 	* [`TestService.StopVideoCaptureAsync`](https://create.roblox.com/docs/reference/engine/classes/TestService#StopVideoCaptureAsync)
 	* [`TestService.TakeSnapshot`](https://create.roblox.com/docs/reference/engine/classes/TestService#TakeSnapshot)
